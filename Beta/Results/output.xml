@@ -1,0 +1,2822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170828 15:07:15.891" generator="Robot 3.0.2 (Python 2.7.9 on win32)">
+<suite source="C:\Users\kchandrasekharan\PycharmProjects\Beta\tests\C2-JoinRenew.robot" id="s1" name="C2-JoinRenew">
+<test id="s1-t1" name="Join and Renew">
+<kw type="setup" name="Open Apps" library="Library">
+<arguments>
+<arg>${Env}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20170828 15:07:16.028" level="INFO">Opening browser 'gc' to base url 'https://beta.apps.asrt.org/Default.aspx'</msg>
+<status status="PASS" endtime="20170828 15:07:21.931" starttime="20170828 15:07:16.027"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Beta'</arg>
+<arg>set suite variable</arg>
+<arg>${userIcon}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em</arg>
+</arguments>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${userIcon}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em</arg>
+</arguments>
+<msg timestamp="20170828 15:07:21.932" level="INFO">${userIcon} = //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em</msg>
+<status status="PASS" endtime="20170828 15:07:21.932" starttime="20170828 15:07:21.932"></status>
+</kw>
+<status status="PASS" endtime="20170828 15:07:21.932" starttime="20170828 15:07:21.931"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Live'</arg>
+<arg>set suite variable</arg>
+<arg>${userIcon}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em</arg>
+</arguments>
+<status status="PASS" endtime="20170828 15:07:21.932" starttime="20170828 15:07:21.932"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Beta'</arg>
+<arg>set suite variable</arg>
+<arg>${Logout}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a</arg>
+</arguments>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${Logout}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a</arg>
+</arguments>
+<msg timestamp="20170828 15:07:21.933" level="INFO">${Logout} = //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a</msg>
+<status status="PASS" endtime="20170828 15:07:21.933" starttime="20170828 15:07:21.933"></status>
+</kw>
+<status status="PASS" endtime="20170828 15:07:21.933" starttime="20170828 15:07:21.933"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Live'</arg>
+<arg>set suite variable</arg>
+<arg>${Logout}</arg>
+<arg>//*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a</arg>
+</arguments>
+<status status="PASS" endtime="20170828 15:07:21.933" starttime="20170828 15:07:21.933"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Live'</arg>
+<arg>set suite variable</arg>
+<arg>${GiveElement}</arg>
+<arg>//*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[11]/a</arg>
+</arguments>
+<status status="PASS" endtime="20170828 15:07:21.934" starttime="20170828 15:07:21.934"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Env}' == 'Beta'</arg>
+<arg>set suite variable</arg>
+<arg>${GiveElement}</arg>
+<arg>//*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[10]/a</arg>
+</arguments>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${GiveElement}</arg>
+<arg>//*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[10]/a</arg>
+</arguments>
+<msg timestamp="20170828 15:07:21.934" level="INFO">${GiveElement} = //*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[10]/a</msg>
+<status status="PASS" endtime="20170828 15:07:21.934" starttime="20170828 15:07:21.934"></status>
+</kw>
+<status status="PASS" endtime="20170828 15:07:21.934" starttime="20170828 15:07:21.934"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Welcome to the ASRT!</arg>
+</arguments>
+<status status="PASS" endtime="20170828 15:07:21.952" starttime="20170828 15:07:21.935"></status>
+</kw>
+<status status="PASS" endtime="20170828 15:07:21.952" starttime="20170828 15:07:16.027"></status>
+</kw>
+<kw name="Given I have logged in Apps" library="Login">
+<doc>Sucessfull Login to Apps</doc>
+<arguments>
+<arg>${username}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${LoginButton}</arg>
+</arguments>
+<status status="PASS" endtime="20170828 15:07:21.982" starttime="20170828 15:07:21.953"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${LoginButton}</arg>
+</arguments>
+<msg timestamp="20170828 15:07:21.983" level="INFO">Clicking element '//*[@id="ctl00_SlimHeader_actionButton"]'.</msg>
+<status status="PASS" endtime="20170828 15:07:22.785" starttime="20170828 15:07:21.982"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserName_Input}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20170828 15:07:22.785" level="INFO">Typing text 'asrtshopper' into text field '//*[@id="ctl00_ContentPlaceHolder1_ControlAlternateLogin_TextBoxLoginId"]'</msg>
+<status status="PASS" endtime="20170828 15:07:22.867" starttime="20170828 15:07:22.785"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>${password_input}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20170828 15:07:22.868" level="INFO">Typing password into text field '//*[@id="ctl00_ContentPlaceHolder1_ControlAlternateLogin_TextBoxPassword"]'</msg>
+<status status="PASS" endtime="20170828 15:07:22.933" starttime="20170828 15:07:22.868"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${login}</arg>
+</arguments>
+<msg timestamp="20170828 15:07:22.934" level="INFO">Clicking button '//*[@id="ctl00_ContentPlaceHolder1_ControlAlternateLogin_ButtonLogin"]'.</msg>
+<status status="PASS" endtime="20170828 15:07:23.014" starttime="20170828 15:07:22.933"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${MyAsrt}</arg>
+</arguments>
+<status status="PASS" endtime="20170828 15:07:24.776" starttime="20170828 15:07:23.014"></status>
+</kw>
+<status status="PASS" endtime="20170828 15:07:24.776" starttime="20170828 15:07:21.953"></status>
+</kw>
+<kw name="And I Click Renew Memership" library="JoinandRenew">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${membershiprenewal}</arg>
+</arguments>
+<msg timestamp="20170828 15:07:24.778" level="INFO">Clicking element '//*[@id="ctl00_ContentPlaceHolder1_RenewLink"]'.</msg>
+<status status="PASS" endtime="20170828 15:07:25.304" starttime="20170828 15:07:24.777"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>page should not contain</arg>
+<arg>You have already successfully renewed your membership today.</arg>
+</arguments>
+<assign>
+<var>${NotRenewedToday}</var>
+</assign>
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<doc>Verifies the current page does not contain `text`.</doc>
+<arguments>
+<arg>You have already successfully renewed your membership today.</arg>
+</arguments>
+<msg timestamp="20170828 15:07:25.341" level="INFO">&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;&lt;title&gt;
+	Join and Renew
+&lt;/title&gt;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" /&gt;&lt;link href="Css/JoinRenew.css" rel="stylesheet" /&gt;&lt;link href="Css/JoinRenewMobile.css" rel="stylesheet" /&gt;&lt;link href="../css/Datepicker.css" rel="stylesheet" /&gt;
+    &lt;script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"&gt;&lt;/script&gt;&lt;script src="https://connect.facebook.net/signals/config/126184081062215?v=2.7.20" async=""&gt;&lt;/script&gt;&lt;script async="" src="//connect.facebook.net/en_US/fbevents.js"&gt;&lt;/script&gt;&lt;script src="//bat.bing.com/bat.js" async=""&gt;&lt;/script&gt;&lt;script async="" src="https://ASRT.informz.net/web_trk/sp.js"&gt;&lt;/script&gt;&lt;script async="" src="//www.google-analytics.com/analytics.js"&gt;&lt;/script&gt;&lt;script src="../js/JQuery/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+    &lt;script src="../js/JQuery/Datepicker.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Universal Analytics --&gt;
+    &lt;script type="text/javascript"&gt;
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-525448-9', { 'cookieDomain': 'asrt.org', allowLinker: true });
+        ga('require', 'linkid', 'linkid.js');
+        ga('send', 'pageview');
+    &lt;/script&gt;
+
+    &lt;!-- Informz --&gt;
+    &lt;script&gt;
+        //-------------------------------------------------------
+        var z_account = "5567E01F-717A-48C2-AF8B-623566C5A261";
+        var z_collector = "ASRT.informz.net";
+        var z_cookieDomain = ".asrt.org";
+        //-------------------------------------------------------
+        (function (e, o, n, r, t, a, s) { e[t] || (e.GlobalSnowplowNamespace = e.GlobalSnowplowNamespace || [], e.GlobalSnowplowNamespace.push(t), e[t] = function () { (e[t].q = e[t].q || []).push(arguments) }, e[t].q = e[t].q || [], a = o.createElement(n), s = o.getElementsByTagName(n)[0], a.async = 1, a.src = r, s.parentNode.insertBefore(a, s)) }(window, document, "script", "https://" + z_collector + "/web_trk/sp.js", "informz_trk")), informz_trk("newTracker", "infz", z_collector + "/web_trk/collector/", { appId: z_account, cookieDomain: z_cookieDomain }), informz_trk("setUserIdFromLocation", "_zs"), informz_trk("enableActivityTracking", 30, 15); informz_trk("trackPageView", null);
+    &lt;/script&gt;
+
+    &lt;!--BING --&gt;
+    &lt;script type="text/javascript"&gt;(function (w, d, t, r, u) { var f, n, i; w[u] = w[u] || [], f = function () { var o = { ti: "4006852" }; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad") }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () { var s = this.readyState; s &amp;amp;&amp;amp; s !== "loaded" &amp;amp;&amp;amp; s !== "complete" || (f(), n.onload = n.onreadystatechange = null) }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");&lt;/script&gt;
+
+    &lt;!--Facebook --&gt;
+    &lt;script&gt;
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+        document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '126184081062215');
+        fbq('track', "PageView");
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form name="form1" method="post" action="./JoinRenew.aspx" id="form1"&gt;
+&lt;div&gt;
+&lt;input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" /&gt;
+&lt;input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" /&gt;
+&lt;input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTI0Mjc0MDI5NGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFhsFFXJhZGlvQnV0dG9uUmV0aXJlZFllcwUUcmFkaW9CdXR0b25SZXRpcmVkTm8FGXJhZGlvQnV0dG9uQVJSVFJlZ2lzdGVyZWQFHHJhZGlvQnV0dG9uTk9UQVJSVFJlZ2lzdGVyZWQFHXJhZGlvQnV0dG9uSGFzT3RoZXJSZWdpc3RyaWVzBSVyYWRpb0J1dHRvbkRvZXNOb3RIYXZlT3RoZXJSZWdpc3RyaWVzBQhoYXNBUkRNUwUIaGFzTk1UQ0IFB2hhc01EQ0IFEWhhc0ZMU3RhdGVMaWNlbnNlBRlkb2VzTm90SGF2ZUZMU3RhdGVMaWNlbnNlBRtyYWRpb0J1dHRvbkhhc1N0YXRlTGljZW5zZXMFI3JhZGlvQnV0dG9uRG9lc05vdEhhdmVTdGF0ZUxpY2Vuc2VzBRRsaWNlbnNlMVVuUmVzdHJpY3RlZAUUbGljZW5zZTJVblJlc3RyaWN0ZWQFF3JhZGlvQnV0dG9uSGFzR3JhZHVhdGVkBRpyYWRpb0J1dHRvbkhhc05vdEdyYWR1YXRlZAUTcmFkaW9CdXR0b25JblNjaG9vbAUWcmFkaW9CdXR0b25Ob3RJblNjaG9vbAUTY2hlY2tib3hBdXRvUmVuZXdhbAUZdHJhZGl0aW9uTWVtYmVyc2hpcE9wdGlvbgUUZmxleE1lbWJlcnNoaXBPcHRpb24FEHJlc2V0Sm9pbkRhdGVZZXMFD3Jlc2V0Sm9pbkRhdGVObwUPY2hlY2tib3hQcmVtaXVtBQxwYXlQYWxPcHRpb24FEGNyZWRpdENhcmRPcHRpb24XpG9afCJtF97W6JkSw3K7VI7jK6RAnfaSy0iEOhA9Zg==" /&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+//&amp;lt;![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&amp;gt;
+&lt;/script&gt;
+
+
+&lt;script src="/WebResource.axd?d=dt-AYLALHiByrvmGU_p1DfoGbEeO9vtdBu1M7qNoKyLKPW5J6k9I5Mrx21EszeW4OvQAgKUr8XLvqJRyNs3NuLOgAs1qQ49XQYkwiBzTYXM1&amp;amp;t=636264156700000000" type="text/javascript"&gt;&lt;/script&gt;
+
+
+&lt;script src="/ScriptResource.axd?d=TJ_3sGZa9jKyUouMWfZ6NBw06r2X_rwfTPW75pL6yHUGQQxOH1G1tAtHiKtot1Ussyp1UfRk7Q_DJm6X6HQ2Jz8tQ7nXLn-RnWxgjyo07n5Vr0GgTXHMBUeDhgIemyzJGqIZyJc865N-L6qa7KBiVVMGs8GqxqElt49_PxYfF25YAtQEvpx6M8kg7G3Ic7cN0&amp;amp;t=2bb02662" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+//&amp;lt;![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]&amp;gt;
+&lt;/script&gt;
+
+&lt;script src="/ScriptResource.axd?d=QD5_ZVToOwHklelVj1QQR9_YanwugBHdKRpOIAIysLCaka2jjF6ab9LhkS9JOffa3t9zREaCbvqIH6BkJeIrvyp1j8uqYnRTbBgeO6vo2s5P0P1lBMUd1cDAm4fkfZsvL4ffowHHSMMlFNu58EdL2r7JduM5s4yM8u9EBgQsRNAsZXyu1syOyJpOlmToB6aM0&amp;amp;t=2bb02662" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/ScriptResource.axd?d=T436cfNjpi8KBdckEwA5mSCmOjH1DoKA8CtWnOM10LV_1I0EwGqbIEXMcZNmh-WoqRybddsT50Q3MmVu4kIUoS51ZqYcTZ8ZijuyLkElwgHILJZY1ApBGn31VMkJyCfKldzii285o3rnQuJtNyn3oakNJuebA1ZCtioWlrqOfG41&amp;amp;t=ffffffff83344e47" type="text/javascript"&gt;&lt;/script&gt;
+&lt;div&gt;
+
+	&lt;input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B00ECEB0" /&gt;
+	&lt;input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAExwAxgWlh6pKP7U7TBPyuAS1SAQHC5ejR3GxEaCgNGIoeGQMJTHxWojQd9JakvYMGlrV/vmy4KK07lqF4Efr/wzzsIwWJ3iHXGXoea8XaAXjI80qZWvHGyPVafSCCwpGawbb14DK9IBc1nfxGuJxq/mooMJYkajVHDNN34b+fMeK5nE/B7BN6qsp6Ilx9RNOyxk71u68rnAj4Lw89Zkivrv1mUbqXAoJf3GvUQ26ehcK1CtRvf9mQPGlvxA1zGDkcJvEAmMFS+Z3tavPuGCwCIeGik94gL17fZLY5LmkwIXLwAoWVBu/aD1Q9ogo+pISL+gwmkDRDxkjZSRfOmQ+gFGI3ZH98xsiqkKtk2wWJrYJCX0HaYx+wqntWiTcOtxhCiE+HNjVL3/dTFuD7VaqjxZf4h24fCoAfE98zHZJXMMrew1dDgq2oa6g10GKq6wYFS0JZBN2b7IkhESOUjd5g5EcYC8msBtFOpKUaLsVkcKl7DMPoUqFXm5ktBmB0z85xv5DDRWEtfO+zBAfnpTEd580K1jReIP4eaeFNRShjqzRJuCpn52qye7BPP4bD+zicDlC6WyiIe0AI+iBBbvKVfDp8txpO2Y3q2wAG+6ha7D2LwlaC+RNh6d31AH0v+hMIc4h+dVpRooQNOv6HRM8FRUAXTLMY+A96UiPFXTBcSj2yZNJkRCdOtOJhL4rSa8KMUNae8SJ9/HbqSDE26cZDula93N+2hdOU317dD9UGEZ4kY59azNvj/LQD1uX3NBDQmDIHdwUtBNO+OgMj/9J9bIaPl4FA6o6XHID39g8uvBJ3/4QiKW2rgoyWgEUcEBM2U9ZxM2rzr8P/bi4reb+FX9BtG8pdlgpa1/PLjbPqnYAY+P5SNm1Tnh/Hu8FH3T4aZKl7W3vN4zpK/Dvj/PR4upGABrBDeAsOUKgqkq0t8R6gfI5YsaTme9sLcCXZI7X1EinK/Wm5wRe4CNjgfjpq+mWciBOIUMFp20tndIWQCmsHEBK3JwKueqV+6a1hVMoOrpRpMWFWWKTvz09DV+muwSupZY6diZ2SEgGBTbRfUqlkMHrvIfe8AQb+0j1YAQi5mZkaRK5+VU2jUdJvlXROS70enWzAOduDEjc9gx0Opr4YgbooIRViuYb+HQdpxqbHjVcwVR/TNAmnJ+0ULxmDy+otZwyMAbeO5eeO+4tD0b/XFYRGGYtov6H0PaTjtjVC7Hg7HSddKuUhV9rSnOX46mh7wLG9TLgExPGPq2MCKoDn5D70N8q6ZrcpXrD0J3I8yzGfFAGmuSDLNazosUNYLJr/8lFiz2b19g86rNDLfRSx9YdhtNzeoEu9POE5nYJ+cmMSdas+Lh5tVoF0nc8QM3SDbzjF7YcjzuDSHLHVhS7Z1dxaQEaI9VhYujMEqS+L5h1DqPiIY5yty2fGbtpaQ+TyaMTuaOT4R/kE774bj5KYFTkNwoVJu6o4Ukhh92lCDYyAxpjHn/+L4Dm59Di1u9DBEZqbK55rePJTDfFUMwHu5L/XQlTtfT7jz/wyqrLYABXHjXIe+7H27sFxJT6IcE2j2kTGzjdhGcQ4feSWkgo3ll94u255KdY+hm84PUzYaDbqokE2d0+SIpRMZcpizsQi2253+sXo3pfTDMLyJnux04KHCJmEpfKed4usH8kTU=" /&gt;
+&lt;/div&gt;
+        &lt;script type="text/javascript"&gt;
+//&amp;lt;![CDATA[
+Sys.WebForms.PageRequestManager._initialize('scriptManager', 'form1', [], [], [], 90, '');
+//]]&amp;gt;
+&lt;/script&gt;
+
+        &lt;div class="entirePage"&gt;
+            &lt;div style="max-width: 1300px; padding: 20px; margin-right: auto; margin-left: auto;"&gt;
+                
+
+&lt;script&gt;
+    $(function () {
+        var allowClick = true;
+
+        $('.collapse-button, .menuOverlay').click(function () {
+
+            if (allowClick === true) {
+                var sliderAlteration = $(".sliderMenu").css("width").replace("px", "");
+                var sliderCurrentPosition = $(".sliderMenu").css("right").replace("px", "");
+                var newSliderPosition = (sliderCurrentPosition * -1) - sliderAlteration;
+
+                $(".sliderMenu").animate({
+                    right: newSliderPosition + 'px'
+                }, {
+                    start: function () { allowClick = false; },
+                    duration: 'medium',
+                    complete: function () { allowClick = true; },
+                });
+
+                $(".menuOverlay").toggle();
+            }
+
+        });
+
+
+        $(".userLink").click(function () {
+            if ($(this).hasClass('expanded')) {
+                $(this).removeClass('expanded');
+                $('.popUp').slideUp('medium', null);
+            } else {
+                $(this).addClass('expanded');
+                $('.popUp').slideDown('medium', null);
+            }
+        });
+
+    });
+
+&lt;/script&gt;
+
+&lt;style&gt;
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #d3d3d3;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    .popUp {
+        position: absolute;
+        background: #fff;
+        z-index: 9999;
+        min-width: 200px;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 4px;
+        text-align: left;
+        margin-top: -25px;
+        right: 190px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+        .popUp .progressBar {
+            background-color: #ccc;
+            height: 22px;
+            padding: 2px;
+            width: 120px;
+            float: right;
+        }
+
+        .popUp .progressFill {
+            background-color: #008AB0;
+            color: #fff;
+            height: 100%;
+            text-align: center;
+            -ms-text-shadow: 1px 2px #333;
+            text-shadow: 1px 2px #333;
+            vertical-align: middle;
+        }
+
+    .popUpIconAnchor {
+        float: left;
+        clear: both;
+    }
+
+    .popUpUserIcon {
+        float: left;
+        color: #d3d3d3 !important;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .userLink {
+        color: #d3d3d3 !important;
+        cursor: pointer;
+    }
+
+    a img {
+        border: none;
+    }
+
+    .navbar {
+        height: 60px;
+        border-bottom: 1px solid #CCCCCC;
+        padding-bottom: 10px;
+    }
+
+        .navbar .button {
+            margin: 0 !important;
+        }
+
+        .navbar .half {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .navbar .rightHalf {
+            display: table-cell;
+            vertical-align: bottom;
+            padding-right: 30px;
+        }
+
+            .navbar .rightHalf:last-child {
+                padding-right: 0;
+            }
+
+        .navbar .user {
+            color: #d3d3d3;
+        }
+
+    .menuOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        background-color: #000;
+        opacity: .2;
+    }
+
+    .sliderMenu {
+        position: absolute;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        z-index: 100010;
+        right: -300px;
+    }
+
+    .navbar .collapse-button .icon-bar {
+        background-color: #003876 !important;
+        border-radius: 1px 1px 1px 1px !important;
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25) !important;
+        display: block !important;
+        height: 5px !important;
+        width: 100% !important;
+        margin-top: 5px !important;
+    }
+
+    .navbar .collapse-button {
+        width: 50px !important;
+        background-color: #fff !important;
+        border-radius: 4px 4px 4px 4px !important;
+        border-style: solid !important;
+        border-width: 1px !important;
+        color: #FFFFFF !important;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.075) !important;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
+        cursor: pointer !important;
+        font-size: 14px !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        -moz-box-sizing: border-box !important;
+        -webkit-box-sizing: border-box !important;
+    }
+
+        .navbar .collapse-button:hover,
+        .navbar .collapse-button:focus {
+            background-image: none !important;
+            background-color: #fff !important;
+            color: #FFF !important;
+        }
+
+    .navbar .action {
+        background: #f49600 !important;
+        background: rgba(244, 150, 0, 1) !important;
+    }
+
+    .navbar .fakeButton {
+        border: 1px #FFFFFF none;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        cursor: pointer;
+        display: inline-block !important;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 14px;
+        margin: 0 10px 0 0;
+        padding: 8px 12px 8px 12px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff !important;
+        clear: both;
+    }
+
+    .navbar a.fakeButton, .navbar a.fakeButton:hover {
+        color: inherit;
+    }
+
+    .navbar .primary {
+        background-color: #003876;
+    }
+
+    .sliderMenu .orange {
+        background: #f49600 !important;
+        background: rgba(244, 150, 0, 1) !important;
+    }
+
+
+    @font-face {
+        font-family: 'FontAwesome4_7';
+        src: url('https://media.asrt.org/global/fonts/FontAwesome-4.7/fontawesome-webfont.eot?v=4.7.0');
+        src: url('https://media.asrt.org/global/fonts/FontAwesome-4.7/fontawesome-webfont.eot?#iefix&amp;amp;v=4.7.0') format('embedded-opentype'), url('https://media.asrt.org/global/fonts/FontAwesome-4.7/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://media.asrt.org/global/fonts/FontAwesome-4.7/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://media.asrt.org/global/fonts/FontAwesome-4.7/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://media.asrt.org/global/fonts/FontAwesome-4.7/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .navbar .fa, .sliderMenu .fa, .popUp .fa {
+        font-family: 'FontAwesome4_7' !important;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .fa-2x {
+        font-size: 2em !important;
+    }
+
+    .navbar .fa-calendar:before, .sliderMenu .fa-calendar:before {
+        content: "\f073" !important;
+    }
+
+    .navbar .fa-check:before, .sliderMenu .fa-check:before {
+        content: "\f00c" !important;
+    }
+
+    .navbar .fa-exclamation-triangle:before, .sliderMenu .fa-exclamation-triangle:before,
+    .navbar .fa-warning:before, .sliderMenu .fa-warning:before {
+        content: "\f071" !important;
+    }
+
+    .navbar .fa-heart:before, .sliderMenu .fa-heart:before {
+        content: "\f004" !important;
+    }
+
+    .navbar .fa-minus-square-o:before, .sliderMenu .fa-minus-square-o:before {
+        content: "\f147" !important;
+    }
+
+    .navbar .fa-plus-square-o:before, .sliderMenu .fa-plus-square-o:before {
+        content: "\f196" !important;
+    }
+
+    .navbar .fa-question-circle:before, .sliderMenu .fa-question-circle:before {
+        content: "\f059" !important;
+    }
+
+    .navbar .fa-search:before, .sliderMenu .fa-search:before {
+        content: "\f002" !important;
+    }
+
+    .navbar .fa-shopping-bag:before, .sliderMenu .fa-shopping-bag:before {
+        content: "\f290" !important;
+    }
+
+    .navbar .fa-times:before, .sliderMenu .fa-times:before {
+        content: "\f00d" !important;
+    }
+
+    .navbar .fa-user:before, .sliderMenu .fa-user:before, .popUp .fa-user:before {
+        content: "\f007" !important;
+    }
+
+    .navbar .fa-user-circle-o:before, .sliderMenu .fa-user-circle-o:before, .popUp .fa-user-circle-o:before {
+        content: "\f2be" !important;
+    }
+
+    .navbar .fa-user-o:before, .sliderMenu .fa-user-o:before {
+        content: "\f2c0" !important;
+    }
+
+    .navbar .teal, .sliderMenu .teal {
+        background-color: #008ab0 !important;
+    }
+&lt;/style&gt;
+
+&lt;div class="menuOverlay" style="display: none;"&gt;
+&lt;/div&gt;
+&lt;div class="sliderMenu"&gt;
+    
+&lt;script&gt;
+    $(function () {
+        var $menu = $('ul.slimmenu'),
+            $animSpeed = 'medium',
+            $easingEffect = null;
+
+        $menu.on('click', '.sub-collapser', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if ($(this).hasClass('expanded')) {
+                $(this).removeClass('expanded');
+                $(this).find('div').html('+');
+                $(this).prev('ul').slideUp($animSpeed, $easingEffect);
+            } else {
+                $(this).addClass('expanded');
+                $(this).find('div').html('&amp;amp;#8212;');
+                $(this).prev('ul').slideDown($animSpeed, $easingEffect);
+            }
+        });
+    });
+&lt;/script&gt;
+
+&lt;style&gt;
+    .slimmenu ul {
+        list-style: none;
+    }
+
+    .slimmenu ul,
+    .slimmenu li {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    ul.slimmenu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+        ul.slimmenu li {
+            position: relative;
+            display: inline-block;
+            background-color: #003876;
+            border-bottom: #CCC thin solid;
+            margin-right: -5px;
+        }
+
+        ul.slimmenu &amp;gt; li:first-child {
+            border-left: 0;
+        }
+
+        ul.slimmenu &amp;gt; li:last-child {
+            margin-right: 0;
+        }
+
+
+        .noClick {
+            padding: 12px 64px 12px 16px;
+            color: #FFF;
+
+        }
+
+        ul.slimmenu li a{
+            display: block;
+            color: #FFF;
+            padding: 12px 64px 12px 16px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            text-decoration: none;
+            transition: background-color 0.5s ease-out;
+            -o-transition: background-color 0.5s ease-out;
+            -moz-transition: background-color 0.5s ease-out;
+            -webkit-transition: background-color 0.5s ease-out;
+        }
+
+            ul.slimmenu li a:hover {
+                text-decoration: none;
+                color: #6699C5;
+            }
+
+        ul.slimmenu li li a {
+            color: #008AAE;
+            background-color: #FFF;
+            border-left: #DEDEDE thin solid;
+            border-right: #DEDEDE thin solid;
+        }
+
+            ul.slimmenu li li a:hover {
+                color: #B2CB24;
+            }
+
+        ul.slimmenu li .sub-collapser {
+            background: none repeat scroll 0 0 rgba(0, 0, 0, 0.075);
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 48px;
+            height: 100%;
+            text-align: center;
+            z-index: 999;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+            ul.slimmenu li .sub-collapser div {
+                content: '';
+                display: inline-block;
+                height: 100%;
+                color: #FFF;
+                font-size: 26px;
+                font-weight: 800;
+            }
+
+
+        ul.slimmenu li ul {
+            margin: 0;
+            list-style-type: none;
+        }
+
+            ul.slimmenu li ul li {
+                background-color: #DEDEDE;
+            }
+
+        ul.slimmenu li &amp;gt; ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            z-index: 999;
+            width: 100%;
+        }
+
+            ul.slimmenu li &amp;gt; ul &amp;gt; li ul {
+                display: none;
+                position: absolute;
+                left: 100%;
+                top: 0;
+                z-index: 999;
+                width: 100%;
+            }
+
+        ul.slimmenu.collapsed li {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+            ul.slimmenu.collapsed li a {
+                display: block;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+
+            ul.slimmenu.collapsed li .sub-collapser {
+                height: 43px;
+            }
+
+            ul.slimmenu.collapsed li &amp;gt; ul {
+                display: none;
+                position: static;
+            }
+
+.menuIcon {
+    color: #fff;
+    float: left;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+&lt;/style&gt;
+&lt;div style="height: 100%; background-color: #003876;"&gt;
+    &lt;ul id="SlimHeader_SlimMenu_mobileMenu" class="slimmenu collapsed"&gt;&lt;li&gt;&lt;span class="fa fa-search menuIcon"&gt;&lt;/span&gt;&lt;a href="https://beta.asrt.org//search-results"&gt;Search&lt;/a&gt;&lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="http://beta.apps.asrt.org/MyAsrt.aspx"&gt;My ASRT&lt;/a&gt;
+                                    &lt;ul style="display: none;"&gt;
+                                        &lt;li class="orange"&gt;&lt;a href="http://beta.apps.asrt.org/JoinRenew/JoinRenew.aspx"&gt;Renew Membership&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="http://asrt.precrowdwisdom.com/diweb/mylearning"&gt;My Learning&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="http://beta.apps.asrt.org/ContinuingEducation/CertificateUpload.aspx"&gt;Upload Certificate&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="http://beta.apps.asrt.org/ContinuingEducation/ComplianceTranscript.aspx"&gt;Compliance Transcript&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="http://beta.community.asrt.org/"&gt;My Communities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                    &lt;span class="sub-collapser"&gt;&lt;div&gt;+&lt;/div&gt;&lt;/span&gt;
+                                  &lt;/li&gt;&lt;li&gt;&lt;a href="http://beta.asrt.org/membership"&gt;Membership&lt;/a&gt;
+&lt;ul style="display: none;"&gt;
+&lt;li&gt;&lt;a href="https://beta.apps.asrt.org/joinrenew/joinrenew.aspx"&gt;Join/Renew&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/membership/why-join-asrt"&gt;Why Join?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/membership/join-asrt"&gt;Join Options&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-collapser"&gt;&lt;div&gt;+&lt;/div&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/continuing-education"&gt;Continuing Education&lt;/a&gt;
+&lt;ul style="display: none;"&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/continuing-education/earn-ce"&gt;Earn CE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/continuing-education/track-ce-credits"&gt;Track CE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/continuing-education/asrt-request-for-approval-information"&gt;Request for CE Approval&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-collapser"&gt;&lt;div&gt;+&lt;/div&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/news-research"&gt;News and Research&lt;/a&gt;
+&lt;ul style="display: none;"&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/news-research/asrt-white-papers"&gt;ASRT White Papers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/news-research/radiologic-technology-news"&gt;Radiologic Technology News&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/news-research/press-room"&gt;Press Room&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/asrt-journals-magazines"&gt;ASRT Journals and Magazines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/asrt-newsletters"&gt;ASRT Newsletters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-collapser"&gt;&lt;div&gt;+&lt;/div&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations"&gt;Standards and Regulations&lt;/a&gt;
+&lt;ul style="display: none;"&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/practice-standards/practice-standards"&gt;Practice Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/state-legislative-affairs/states-that-regulate-by-modality"&gt;State Licensure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/state-legislative-affairs"&gt;State Legislative Affairs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/federal-legislative-affairs"&gt;Federal Legislative Affairs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/asrt-advocacy"&gt;ASRT Advocacy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/political-action-committee"&gt;Political Action Committee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/regulatory-legislative-news"&gt;Regulatory and Legislative News&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/standards-regulations/radiologist-assistant-legislation"&gt;Radiologist Assistant Legislation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-collapser"&gt;&lt;div&gt;+&lt;/div&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/careers"&gt;Career Center&lt;/a&gt;
+&lt;ul style="display: none;"&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/careers/careers-in-radiologic-technology"&gt;Careers in Radiologic Technology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/careers/asrt-jobbank"&gt;Job Bank&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/careers/job-search-resources"&gt;Job Search Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/careers/radiologist-assistant"&gt;Radiologic Assistant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/careers/salary-estimator"&gt;Salary Estimator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-collapser"&gt;&lt;div&gt;+&lt;/div&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/about-asrt"&gt;About ASRT&lt;/a&gt;
+&lt;ul style="display: none;"&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/about-asrt/contact-asrt"&gt;Contact ASRT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/about-asrt/mission-vision"&gt;Mission and Vision&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/about-asrt/asrt-governance"&gt;ASRT Governance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/about-asrt/affiliates"&gt;Affiliates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/about-asrt/doing-business-with-asrt"&gt;Doing Business with ASRT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/about-asrt/museum-and-archives"&gt;ASRT Museum and Archives&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-collapser"&gt;&lt;div&gt;+&lt;/div&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Resources&lt;/a&gt;
+&lt;ul style="display: none;"&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/educators"&gt;Educators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/students"&gt;Students&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/volunteers"&gt;Volunteers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/main/about-asrt/affiliates"&gt;Affiliates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://beta.asrt.org/managers"&gt;Managers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-collapser"&gt;&lt;div&gt;+&lt;/div&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class="teal"&gt;&lt;span class="fa fa-heart menuIcon"&gt;&lt;/span&gt;&lt;a href="http://foundation.asrt.org/"&gt;ASRT Foundation&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="teal"&gt;&lt;span class="fa fa-shopping-bag menuIcon"&gt;&lt;/span&gt;&lt;a href="https://beta.apps.asrt.org/store.redirect"&gt;ASRT Store&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="teal"&gt;&lt;span class="fa fa-calendar menuIcon"&gt;&lt;/span&gt;&lt;a href="http://beta.asrt.org/events-and-conferences"&gt;Events and Conferences&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="navbar"&gt;
+    &lt;div class="half"&gt;
+        &lt;a href="https://beta.asrt.org/" id="SlimHeader_homeLink"&gt;
+            &lt;img src="https://media.asrt.org/apps/logos/logo_asrt_350x140.png" style="height: 50px;" /&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="half"&gt;
+        &lt;div style="float: right;"&gt;
+            &lt;div id="SlimHeader_userDiv" class="rightHalf userLoggedIn"&gt;&lt;a class="userLink"&gt;&lt;span id="SlimHeader_userIcon" class="fa fa-user fa-2x"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;div class="rightHalf"&gt;&lt;a href="/MyAsrt.aspx" id="SlimHeader_actionButton" class="fakeButton primary"&gt;My ASRT&lt;/a&gt;&lt;/div&gt;
+            &lt;div class="rightHalf"&gt;
+                &lt;div class="collapse-button"&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="position: relative;"&gt;
+    &lt;div id="SlimHeader_popupContentDiv" class="popUp" style="display: none;"&gt;&lt;div class="popUpUserIcon"&gt;&lt;span class="fa fa-2x fa-user-circle-o"&gt;&lt;/span&gt;&lt;/div&gt;Mo Testing&lt;br /&gt;Member ID# 449822&lt;br /&gt;&lt;hr /&gt;&lt;a href="http://beta.apps.asrt.org/Profile/Update.aspx"&gt;Profile &lt;div class="progressBar"&gt;&lt;div class="progressFill" style="width: 67%;"&gt;67%&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;br /&gt;&lt;a class="popUpIconAnchor" onclick="window.open('http://beta.apps.asrt.org/Chat/ChatForm.aspx', 'ASRT Chat', 'width=500,height=600'); void(0);"&gt;Chat Now&lt;/a&gt;&lt;br /&gt;&lt;a class="popUpIconAnchor" href="http://beta.apps.asrt.org/Logout.aspx"&gt;Logout&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+                &lt;div class="section group"&gt;
+                    &lt;div class="col span_3_of_3"&gt;
+                        &lt;h1&gt;ASRT Membership - Join or Renew&lt;/h1&gt;
+
+                        &lt;p&gt;Thank you for your interest in ASRT membership. Please complete this application to join ASRT or to renew your membership.&lt;/p&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div id="errorGeneralPage" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;There was an error processing your request. Please contact Member Services for assistance.&lt;/div&gt;
+
+                &lt;div id="divRenewalMessage" class="warning" style="display:block;"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;You have already successfully renewed your membership today.&lt;br /&gt;&lt;br /&gt;If you need to change your contact or payment information, please call Member Services at 800-444-2778.&lt;/div&gt;
+
+                &lt;div id="divMain" class="disabledDiv"&gt;
+                    &lt;div class="section group"&gt;
+
+                        &lt;div class="col span_1_of_3"&gt;
+                            
+
+&lt;ul id="navigation" class="hide_mobile" style="padding-left: 0;"&gt;
+    &lt;li&gt;
+        &lt;div id="Navigation_btnStep2" class="fakeButton secondary"&gt;Personal Information&lt;/div&gt;&lt;span id="Navigation_step2Status" class="status"&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div id="Navigation_btnStep3" class="fakeButton informational disabled"&gt;Contact Information&lt;/div&gt;&lt;span id="Navigation_step3Status" class="status"&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div id="Navigation_btnStep4" class="fakeButton informational disabled"&gt;Membership Information&lt;/div&gt;&lt;span id="Navigation_step4Status" class="status"&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div id="Navigation_btnStep5" class="fakeButton informational disabled"&gt;Membership Options&lt;/div&gt;&lt;span id="Navigation_step5Status" class="status"&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div id="Navigation_btnStep6" class="fakeButton informational disabled"&gt;Payment Options&lt;/div&gt;&lt;span id="Navigation_step6Status" class="status"&gt;&lt;/span&gt;
+    &lt;/li&gt;
+
+&lt;/ul&gt;
+
+
+                        &lt;/div&gt;
+
+                        &lt;div class="col span_2_of_3"&gt;
+                            &lt;div id="Step1" class="hidden"&gt;
+                                &lt;h2&gt;Renewal Summary&lt;/h2&gt;
+                                Please review the information below. If there is any information that needs to be updated, please click Edit, otherwise select Pay.
+                        &lt;div class="inputCluster"&gt;
+                            &lt;div class="section group"&gt;
+                                &lt;div class="col span_1_of_2 alignLeft"&gt;
+                                    &lt;label id="labelSummaryName"&gt;&lt;/label&gt;
+                                    &lt;label id="labelSummaryAddress"&gt;&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class="col span_1_of_2 alignRight"&gt;
+                                    &lt;label id="labelSummaryEmail"&gt;&lt;/label&gt;
+                                    &lt;label id="labelSummaryCellphone"&gt;&lt;/label&gt;
+                                    &lt;label id="labelSummaryHomePhone"&gt;&lt;/label&gt;
+                                    &lt;label id="labelSummaryWorkPhone"&gt;&lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="section group"&gt;
+                                &lt;div class="col span_1_of_2"&gt;
+                                    &lt;label id="labelSummaryPrimaryChapter"&gt;&lt;/label&gt;
+                                    &lt;br /&gt;
+                                    &lt;label id="labelSummarySecondaryChapters" class="hidden"&gt;&lt;/label&gt;
+                                    &lt;label id="labelSummaryJournalPreference"&gt;&lt;/label&gt;
+                                    &lt;br /&gt;
+                                    &lt;br /&gt;
+                                    &lt;label id="labelSummaryPremiumMember" class="hidden"&gt;Premium Member&lt;/label&gt;
+                                    &lt;label id="labelSummaryFlexMember" class="hidden"&gt;Directed Reading Flex Plan™ Member&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class="col span_1_of_2"&gt;
+                                    &lt;label id="labelSummaryAdditionalMemberInformation"&gt;&lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="button"&gt;
+                                &lt;button type="button" onclick="EditClicked(this);" class="primaryPassive"&gt;Edit&lt;/button&gt;
+                                &lt;button type="button" onclick="PayClicked(this);" class="primary"&gt;Pay&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                            &lt;/div&gt;
+
+                            &lt;div id="Step2" class="visible"&gt;
+                                &lt;h2&gt;Personal Information&lt;/h2&gt;
+                                &lt;div class="inputCluster"&gt;
+                                    &lt;div id="errorEmailAddressPI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class="inputAndLabel"&gt;
+                                        &lt;div class="label inputFocused"&gt;
+                                            &lt;label class=""&gt;Email Address&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="input"&gt;
+                                            &lt;input name="textBoxemailAddressPI" type="text" id="textBoxemailAddressPI" class="input" onchange="CheckEmail(this);" value="teleform453454@asrt.org" /&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="inputAndLabel" id="emailLoginPrompt" style="display: none;"&gt;
+                                        &lt;span style="font-weight: 600;"&gt;You may have an account with us.&lt;/span&gt;&lt;br /&gt;
+                                        To pre-fill your information,
+                                &lt;button id="loginBtn" type="button" class="primary" onclick="LoginClicked();"&gt;Log In&lt;/button&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="divPassword" class="hidden"&gt;
+                                        &lt;div id="errorPasswordPI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;div class="label"&gt;
+                                                &lt;label class="overlay"&gt;
+                                                    Password&lt;span class="required"&gt;*&lt;/span&gt;  &lt;a class="helpIcon"&gt;&lt;span class="fa fa-question-circle fa-lg"&gt;&lt;/span&gt;&lt;/a&gt;
+                                                    &lt;div class="helpDiv"&gt;
+                                                        Password must be 4-16 characters in length with no spaces. Email address must not already be in use.
+                                                    &lt;/div&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="input"&gt;
+                                                &lt;input class="input" type="password" id="textBoxPasswordPI" /&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div id="errorVerifyPasswordPI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;div class="label"&gt;
+                                                &lt;label class="overlay"&gt;Verify Password&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="input"&gt;
+                                                &lt;input class="input" type="password" id="textBoxVerifyPasswordPI" /&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="errorFirstNamePI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class="inputAndLabel"&gt;
+                                        &lt;div class="label inputFocused"&gt;
+                                            &lt;label class=""&gt;First Name&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="input"&gt;
+                                            &lt;input name="textBoxFirstNamePI" type="text" id="textBoxFirstNamePI" class="input" value="Mo" /&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="errorMiddleNamePI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class="inputAndLabel"&gt;
+                                        &lt;div class="label inputFocused"&gt;
+                                            &lt;label class=""&gt;Middle Name&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="input"&gt;
+                                            &lt;input name="textBoxMiddleNamePI" type="text" id="textBoxMiddleNamePI" class="input" value="H" /&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="errorLastNamePI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class="inputAndLabel"&gt;
+                                        &lt;div class="label inputFocused"&gt;
+                                            &lt;label class=""&gt;Last Name&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="input"&gt;
+                                            &lt;input name="textBoxLastNamePI" type="text" id="textBoxLastNamePI" class="input" value="Testing" /&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="errorDateOfBirthPI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class="inputAndLabel"&gt;
+                                        &lt;div class="label inputFocused"&gt;
+                                            &lt;label class=""&gt;Date of Birth&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="input"&gt;
+                                            &lt;input name="textBoxDateOfBirthPI" type="text" id="textBoxDateOfBirthPI" class="input DatePicker hasDatepicker" value="11/21/1947" /&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="errorGenderPI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class="inputAndLabel"&gt;
+                                        &lt;div class="label inputFocused"&gt;
+                                            &lt;label class=""&gt;Gender&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="input"&gt;
+                                            &lt;select name="dropDownGenderPI" id="dropDownGenderPI" class="input"&gt;
+	&lt;option value="" disabled="disabled"&gt;&lt;/option&gt;
+	&lt;option value=""&gt;Select One&lt;/option&gt;
+	&lt;option value="1"&gt;Male&lt;/option&gt;
+	&lt;option selected="selected" value="2"&gt;Female&lt;/option&gt;
+	&lt;option value="3"&gt;Prefer Not to Answer&lt;/option&gt;
+&lt;/select&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="divPersonalInfoButtons" class="button" style="display:none;"&gt;
+                                        &lt;button type="button" onclick="NextStepClicked(this);" class="primary"&gt;Next&lt;/button&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+
+                            &lt;div id="Step3" class="hidden"&gt;
+                                &lt;h2&gt;Contact Information&lt;/h2&gt;
+                                &lt;div id="errorGeneralCI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                &lt;div class="headerWithFields" id="contactInfoSubStep0"&gt;
+
+                                    &lt;h3&gt;&lt;span id="contactInfoSubStep0Icon" class="fa fa-minus-square-o collapsed"&gt;&lt;/span&gt; Mailing Address&lt;/h3&gt;
+
+                                    &lt;div id="contactInfoSubStep0CollaspableDiv" class="collapsable"&gt;
+                                        &lt;div class="inputCluster"&gt;
+                                            &lt;div id="errorCountryCI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label inputFocused"&gt;
+                                                    &lt;label class="inputFocused"&gt;Country&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;select name="dropDownCountry" id="dropDownCountry" class="input" onchange="CountryChanged(this);"&gt;
+	&lt;option value="" disabled="disabled"&gt;Select One&lt;/option&gt;
+	&lt;option selected="selected" value="United States"&gt;United States&lt;/option&gt;
+	&lt;option value="Canada"&gt;Canada&lt;/option&gt;
+	&lt;option value="Afghanistan"&gt;Afghanistan&lt;/option&gt;
+	&lt;option value="Åland Islands"&gt;Åland Islands&lt;/option&gt;
+	&lt;option value="Albania"&gt;Albania&lt;/option&gt;
+	&lt;option value="Algeria"&gt;Algeria&lt;/option&gt;
+	&lt;option value="American Samoa"&gt;American Samoa&lt;/option&gt;
+	&lt;option value="Andorra"&gt;Andorra&lt;/option&gt;
+	&lt;option value="Angola"&gt;Angola&lt;/option&gt;
+	&lt;option value="Anguilla"&gt;Anguilla&lt;/option&gt;
+	&lt;option value="Antarctica"&gt;Antarctica&lt;/option&gt;
+	&lt;option value="Antigua And Barbuda"&gt;Antigua And Barbuda&lt;/option&gt;
+	&lt;option value="Argentina"&gt;Argentina&lt;/option&gt;
+	&lt;option value="Armenia"&gt;Armenia&lt;/option&gt;
+	&lt;option value="Aruba"&gt;Aruba&lt;/option&gt;
+	&lt;option value="Australia"&gt;Australia&lt;/option&gt;
+	&lt;option value="Austria"&gt;Austria&lt;/option&gt;
+	&lt;option value="Azerbaijan"&gt;Azerbaijan&lt;/option&gt;
+	&lt;option value="Bahamas"&gt;Bahamas&lt;/option&gt;
+	&lt;option value="Bahrain"&gt;Bahrain&lt;/option&gt;
+	&lt;option value="Bangladesh"&gt;Bangladesh&lt;/option&gt;
+	&lt;option value="Barbados"&gt;Barbados&lt;/option&gt;
+	&lt;option value="Belarus"&gt;Belarus&lt;/option&gt;
+	&lt;option value="Belgium"&gt;Belgium&lt;/option&gt;
+	&lt;option value="Belize"&gt;Belize&lt;/option&gt;
+	&lt;option value="Benin"&gt;Benin&lt;/option&gt;
+	&lt;option value="Bermuda"&gt;Bermuda&lt;/option&gt;
+	&lt;option value="Bhutan"&gt;Bhutan&lt;/option&gt;
+	&lt;option value="Bolivia"&gt;Bolivia&lt;/option&gt;
+	&lt;option value="Bonaire"&gt;Bonaire&lt;/option&gt;
+	&lt;option value="Bosnia And Herzegovina"&gt;Bosnia And Herzegovina&lt;/option&gt;
+	&lt;option value="Botswana"&gt;Botswana&lt;/option&gt;
+	&lt;option value="Bouvet Island"&gt;Bouvet Island&lt;/option&gt;
+	&lt;option value="Brazil"&gt;Brazil&lt;/option&gt;
+	&lt;option value="British Indian Ocean Territory"&gt;British Indian Ocean Territory&lt;/option&gt;
+	&lt;option value="Brunei Darussalam"&gt;Brunei Darussalam&lt;/option&gt;
+	&lt;option value="Bulgaria"&gt;Bulgaria&lt;/option&gt;
+	&lt;option value="Burkina Faso"&gt;Burkina Faso&lt;/option&gt;
+	&lt;option value="Burundi"&gt;Burundi&lt;/option&gt;
+	&lt;option value="Cambodia"&gt;Cambodia&lt;/option&gt;
+	&lt;option value="Cameroon"&gt;Cameroon&lt;/option&gt;
+	&lt;option value="Cape Verde"&gt;Cape Verde&lt;/option&gt;
+	&lt;option value="Cayman Islands"&gt;Cayman Islands&lt;/option&gt;
+	&lt;option value="Central African Republic"&gt;Central African Republic&lt;/option&gt;
+	&lt;option value="Chad"&gt;Chad&lt;/option&gt;
+	&lt;option value="Chile"&gt;Chile&lt;/option&gt;
+	&lt;option value="China"&gt;China&lt;/option&gt;
+	&lt;option value="Christmas Island"&gt;Christmas Island&lt;/option&gt;
+	&lt;option value="Cocos (Keeling), Islands"&gt;Cocos (Keeling), Islands&lt;/option&gt;
+	&lt;option value="Colombia"&gt;Colombia&lt;/option&gt;
+	&lt;option value="Comoros"&gt;Comoros&lt;/option&gt;
+	&lt;option value="Congo"&gt;Congo&lt;/option&gt;
+	&lt;option value="Congo, The Democratic Republic Of The"&gt;Congo, The Democratic Republic Of The&lt;/option&gt;
+	&lt;option value="Cook Islands"&gt;Cook Islands&lt;/option&gt;
+	&lt;option value="Costa Rica"&gt;Costa Rica&lt;/option&gt;
+	&lt;option value="Cote DNULLIvoire"&gt;Cote DNULLIvoire&lt;/option&gt;
+	&lt;option value="Croatia"&gt;Croatia&lt;/option&gt;
+	&lt;option value="Cuba"&gt;Cuba&lt;/option&gt;
+	&lt;option value="Curacao"&gt;Curacao&lt;/option&gt;
+	&lt;option value="Cyprus"&gt;Cyprus&lt;/option&gt;
+	&lt;option value="Czech Republic"&gt;Czech Republic&lt;/option&gt;
+	&lt;option value="Denmark"&gt;Denmark&lt;/option&gt;
+	&lt;option value="Djibouti"&gt;Djibouti&lt;/option&gt;
+	&lt;option value="Dominica"&gt;Dominica&lt;/option&gt;
+	&lt;option value="Dominican Republic"&gt;Dominican Republic&lt;/option&gt;
+	&lt;option value="Ecuador"&gt;Ecuador&lt;/option&gt;
+	&lt;option value="Egypt"&gt;Egypt&lt;/option&gt;
+	&lt;option value="El Salvador"&gt;El Salvador&lt;/option&gt;
+	&lt;option value="Equatorial Guinea"&gt;Equatorial Guinea&lt;/option&gt;
+	&lt;option value="Eritrea"&gt;Eritrea&lt;/option&gt;
+	&lt;option value="Estonia"&gt;Estonia&lt;/option&gt;
+	&lt;option value="Ethiopia"&gt;Ethiopia&lt;/option&gt;
+	&lt;option value="Falkland Islands (Malvinas),"&gt;Falkland Islands (Malvinas),&lt;/option&gt;
+	&lt;option value="Faroe Islands"&gt;Faroe Islands&lt;/option&gt;
+	&lt;option value="Fiji"&gt;Fiji&lt;/option&gt;
+	&lt;option value="Finland"&gt;Finland&lt;/option&gt;
+	&lt;option value="France"&gt;France&lt;/option&gt;
+	&lt;option value="French Guiana"&gt;French Guiana&lt;/option&gt;
+	&lt;option value="French Polynesia"&gt;French Polynesia&lt;/option&gt;
+	&lt;option value="French Southern Territories"&gt;French Southern Territories&lt;/option&gt;
+	&lt;option value="Gabon"&gt;Gabon&lt;/option&gt;
+	&lt;option value="Gambia"&gt;Gambia&lt;/option&gt;
+	&lt;option value="Georgia"&gt;Georgia&lt;/option&gt;
+	&lt;option value="Germany"&gt;Germany&lt;/option&gt;
+	&lt;option value="Ghana"&gt;Ghana&lt;/option&gt;
+	&lt;option value="Gibraltar"&gt;Gibraltar&lt;/option&gt;
+	&lt;option value="Greece"&gt;Greece&lt;/option&gt;
+	&lt;option value="Greenland"&gt;Greenland&lt;/option&gt;
+	&lt;option value="Grenada"&gt;Grenada&lt;/option&gt;
+	&lt;option value="Guadeloupe"&gt;Guadeloupe&lt;/option&gt;
+	&lt;option value="Guam"&gt;Guam&lt;/option&gt;
+	&lt;option value="Guatemala"&gt;Guatemala&lt;/option&gt;
+	&lt;option value="Guernsey"&gt;Guernsey&lt;/option&gt;
+	&lt;option value="Guinea"&gt;Guinea&lt;/option&gt;
+	&lt;option value="Guinea-Bissau"&gt;Guinea-Bissau&lt;/option&gt;
+	&lt;option value="Guyana"&gt;Guyana&lt;/option&gt;
+	&lt;option value="Haiti"&gt;Haiti&lt;/option&gt;
+	&lt;option value="Heard Island And Mcdonald Islands"&gt;Heard Island And Mcdonald Islands&lt;/option&gt;
+	&lt;option value="Holy See (Vatican City State),"&gt;Holy See (Vatican City State),&lt;/option&gt;
+	&lt;option value="Honduras"&gt;Honduras&lt;/option&gt;
+	&lt;option value="Hong Kong"&gt;Hong Kong&lt;/option&gt;
+	&lt;option value="Hungary"&gt;Hungary&lt;/option&gt;
+	&lt;option value="Iceland"&gt;Iceland&lt;/option&gt;
+	&lt;option value="India"&gt;India&lt;/option&gt;
+	&lt;option value="Indonesia"&gt;Indonesia&lt;/option&gt;
+	&lt;option value="Iran, Islamic Republic Of"&gt;Iran, Islamic Republic Of&lt;/option&gt;
+	&lt;option value="Iraq"&gt;Iraq&lt;/option&gt;
+	&lt;option value="Ireland"&gt;Ireland&lt;/option&gt;
+	&lt;option value="Isle of Man"&gt;Isle of Man&lt;/option&gt;
+	&lt;option value="Israel"&gt;Israel&lt;/option&gt;
+	&lt;option value="Italy"&gt;Italy&lt;/option&gt;
+	&lt;option value="Jamaica"&gt;Jamaica&lt;/option&gt;
+	&lt;option value="Japan"&gt;Japan&lt;/option&gt;
+	&lt;option value="Jersey"&gt;Jersey&lt;/option&gt;
+	&lt;option value="Jordan"&gt;Jordan&lt;/option&gt;
+	&lt;option value="Kazakhstan"&gt;Kazakhstan&lt;/option&gt;
+	&lt;option value="Kenya"&gt;Kenya&lt;/option&gt;
+	&lt;option value="Kiribati"&gt;Kiribati&lt;/option&gt;
+	&lt;option value="Korea, Democratic PeopleNULLs Republic Of"&gt;Korea, Democratic PeopleNULLs Republic Of&lt;/option&gt;
+	&lt;option value="Korea, Republic Of"&gt;Korea, Republic Of&lt;/option&gt;
+	&lt;option value="Kuwait"&gt;Kuwait&lt;/option&gt;
+	&lt;option value="Kyrgyzstan"&gt;Kyrgyzstan&lt;/option&gt;
+	&lt;option value="Lao PeopleNULLs Democratic Republic"&gt;Lao PeopleNULLs Democratic Republic&lt;/option&gt;
+	&lt;option value="Latvia"&gt;Latvia&lt;/option&gt;
+	&lt;option value="Lebanon"&gt;Lebanon&lt;/option&gt;
+	&lt;option value="Lesotho"&gt;Lesotho&lt;/option&gt;
+	&lt;option value="Liberia"&gt;Liberia&lt;/option&gt;
+	&lt;option value="Libyan Arab Jamahiriya"&gt;Libyan Arab Jamahiriya&lt;/option&gt;
+	&lt;option value="Liechtenstein"&gt;Liechtenstein&lt;/option&gt;
+	&lt;option value="Lithuania"&gt;Lithuania&lt;/option&gt;
+	&lt;option value="Luxembourg"&gt;Luxembourg&lt;/option&gt;
+	&lt;option value="Macao"&gt;Macao&lt;/option&gt;
+	&lt;option value="Macedonia, The Former Yugoslav Republic Of"&gt;Macedonia, The Former Yugoslav Republic Of&lt;/option&gt;
+	&lt;option value="Madagascar"&gt;Madagascar&lt;/option&gt;
+	&lt;option value="Malawi"&gt;Malawi&lt;/option&gt;
+	&lt;option value="Malaysia"&gt;Malaysia&lt;/option&gt;
+	&lt;option value="Maldives"&gt;Maldives&lt;/option&gt;
+	&lt;option value="Mali"&gt;Mali&lt;/option&gt;
+	&lt;option value="Malta"&gt;Malta&lt;/option&gt;
+	&lt;option value="Marshall Islands"&gt;Marshall Islands&lt;/option&gt;
+	&lt;option value="Martinique"&gt;Martinique&lt;/option&gt;
+	&lt;option value="Mauritania"&gt;Mauritania&lt;/option&gt;
+	&lt;option value="Mauritius"&gt;Mauritius&lt;/option&gt;
+	&lt;option value="Mayotte"&gt;Mayotte&lt;/option&gt;
+	&lt;option value="Mexico"&gt;Mexico&lt;/option&gt;
+	&lt;option value="Micronesia, Federated States Of"&gt;Micronesia, Federated States Of&lt;/option&gt;
+	&lt;option value="Moldova, Republic Of"&gt;Moldova, Republic Of&lt;/option&gt;
+	&lt;option value="Monaco"&gt;Monaco&lt;/option&gt;
+	&lt;option value="Mongolia"&gt;Mongolia&lt;/option&gt;
+	&lt;option value="Montenegro"&gt;Montenegro&lt;/option&gt;
+	&lt;option value="Montserrat"&gt;Montserrat&lt;/option&gt;
+	&lt;option value="Morocco"&gt;Morocco&lt;/option&gt;
+	&lt;option value="Mozambique"&gt;Mozambique&lt;/option&gt;
+	&lt;option value="Myanmar"&gt;Myanmar&lt;/option&gt;
+	&lt;option value="Namibia"&gt;Namibia&lt;/option&gt;
+	&lt;option value="Nauru"&gt;Nauru&lt;/option&gt;
+	&lt;option value="Nepal"&gt;Nepal&lt;/option&gt;
+	&lt;option value="Netherlands"&gt;Netherlands&lt;/option&gt;
+	&lt;option value="Netherlands Antilles"&gt;Netherlands Antilles&lt;/option&gt;
+	&lt;option value="New Caledonia"&gt;New Caledonia&lt;/option&gt;
+	&lt;option value="New Zealand"&gt;New Zealand&lt;/option&gt;
+	&lt;option value="Nicaragua"&gt;Nicaragua&lt;/option&gt;
+	&lt;option value="Niger"&gt;Niger&lt;/option&gt;
+	&lt;option value="Nigeria"&gt;Nigeria&lt;/option&gt;
+	&lt;option value="Niue"&gt;Niue&lt;/option&gt;
+	&lt;option value="Norfolk Island"&gt;Norfolk Island&lt;/option&gt;
+	&lt;option value="Northern Mariana Islands"&gt;Northern Mariana Islands&lt;/option&gt;
+	&lt;option value="Norway"&gt;Norway&lt;/option&gt;
+	&lt;option value="Oman"&gt;Oman&lt;/option&gt;
+	&lt;option value="Pakistan"&gt;Pakistan&lt;/option&gt;
+	&lt;option value="Palau"&gt;Palau&lt;/option&gt;
+	&lt;option value="Palestinian Territory, Occupied"&gt;Palestinian Territory, Occupied&lt;/option&gt;
+	&lt;option value="Panama"&gt;Panama&lt;/option&gt;
+	&lt;option value="Papua New Guinea"&gt;Papua New Guinea&lt;/option&gt;
+	&lt;option value="Paraguay"&gt;Paraguay&lt;/option&gt;
+	&lt;option value="Peru"&gt;Peru&lt;/option&gt;
+	&lt;option value="Philippines"&gt;Philippines&lt;/option&gt;
+	&lt;option value="Pitcairn"&gt;Pitcairn&lt;/option&gt;
+	&lt;option value="Poland"&gt;Poland&lt;/option&gt;
+	&lt;option value="Portugal"&gt;Portugal&lt;/option&gt;
+	&lt;option value="Puerto Rico"&gt;Puerto Rico&lt;/option&gt;
+	&lt;option value="Qatar"&gt;Qatar&lt;/option&gt;
+	&lt;option value="Reunion"&gt;Reunion&lt;/option&gt;
+	&lt;option value="Romania"&gt;Romania&lt;/option&gt;
+	&lt;option value="Russian Federation"&gt;Russian Federation&lt;/option&gt;
+	&lt;option value="Rwanda"&gt;Rwanda&lt;/option&gt;
+	&lt;option value="Saba"&gt;Saba&lt;/option&gt;
+	&lt;option value="Saint Barthélemy"&gt;Saint Barthélemy&lt;/option&gt;
+	&lt;option value="Saint Helena"&gt;Saint Helena&lt;/option&gt;
+	&lt;option value="Saint Kitts And Nevis"&gt;Saint Kitts And Nevis&lt;/option&gt;
+	&lt;option value="Saint Lucia"&gt;Saint Lucia&lt;/option&gt;
+	&lt;option value="Saint Martin"&gt;Saint Martin&lt;/option&gt;
+	&lt;option value="Saint Pierre And Miquelon"&gt;Saint Pierre And Miquelon&lt;/option&gt;
+	&lt;option value="Saint Vincent And The Grenadines"&gt;Saint Vincent And The Grenadines&lt;/option&gt;
+	&lt;option value="Samoa"&gt;Samoa&lt;/option&gt;
+	&lt;option value="San Marino"&gt;San Marino&lt;/option&gt;
+	&lt;option value="Sao Tome And Principe"&gt;Sao Tome And Principe&lt;/option&gt;
+	&lt;option value="Saudi Arabia"&gt;Saudi Arabia&lt;/option&gt;
+	&lt;option value="Senegal"&gt;Senegal&lt;/option&gt;
+	&lt;option value="Serbia"&gt;Serbia&lt;/option&gt;
+	&lt;option value="Seychelles"&gt;Seychelles&lt;/option&gt;
+	&lt;option value="Sierra Leone"&gt;Sierra Leone&lt;/option&gt;
+	&lt;option value="Singapore"&gt;Singapore&lt;/option&gt;
+	&lt;option value="Sint Eustatius"&gt;Sint Eustatius&lt;/option&gt;
+	&lt;option value="Sint Maarten"&gt;Sint Maarten&lt;/option&gt;
+	&lt;option value="Slovakia"&gt;Slovakia&lt;/option&gt;
+	&lt;option value="Slovenia"&gt;Slovenia&lt;/option&gt;
+	&lt;option value="Solomon Islands"&gt;Solomon Islands&lt;/option&gt;
+	&lt;option value="Somalia"&gt;Somalia&lt;/option&gt;
+	&lt;option value="South Africa"&gt;South Africa&lt;/option&gt;
+	&lt;option value="South Georgia And The South Sandwich Islands"&gt;South Georgia And The South Sandwich Islands&lt;/option&gt;
+	&lt;option value="South Sudan"&gt;South Sudan&lt;/option&gt;
+	&lt;option value="Spain"&gt;Spain&lt;/option&gt;
+	&lt;option value="Sri Lanka"&gt;Sri Lanka&lt;/option&gt;
+	&lt;option value="Sudan"&gt;Sudan&lt;/option&gt;
+	&lt;option value="Suriname"&gt;Suriname&lt;/option&gt;
+	&lt;option value="Svalbard And Jan Mayen"&gt;Svalbard And Jan Mayen&lt;/option&gt;
+	&lt;option value="Swaziland"&gt;Swaziland&lt;/option&gt;
+	&lt;option value="Sweden"&gt;Sweden&lt;/option&gt;
+	&lt;option value="Switzerland"&gt;Switzerland&lt;/option&gt;
+	&lt;option value="Syrian Arab Republic"&gt;Syrian Arab Republic&lt;/option&gt;
+	&lt;option value="Taiwan, Province Of China"&gt;Taiwan, Province Of China&lt;/option&gt;
+	&lt;option value="Tajikistan"&gt;Tajikistan&lt;/option&gt;
+	&lt;option value="Tanzania, United Republic Of"&gt;Tanzania, United Republic Of&lt;/option&gt;
+	&lt;option value="Thailand"&gt;Thailand&lt;/option&gt;
+	&lt;option value="Timor-Leste"&gt;Timor-Leste&lt;/option&gt;
+	&lt;option value="Togo"&gt;Togo&lt;/option&gt;
+	&lt;option value="Tokelau"&gt;Tokelau&lt;/option&gt;
+	&lt;option value="Tonga"&gt;Tonga&lt;/option&gt;
+	&lt;option value="Trinidad and Tobago"&gt;Trinidad and Tobago&lt;/option&gt;
+	&lt;option value="Tunisia"&gt;Tunisia&lt;/option&gt;
+	&lt;option value="Turkey"&gt;Turkey&lt;/option&gt;
+	&lt;option value="Turkmenistan"&gt;Turkmenistan&lt;/option&gt;
+	&lt;option value="Turks And Caicos Islands"&gt;Turks And Caicos Islands&lt;/option&gt;
+	&lt;option value="Tuvalu"&gt;Tuvalu&lt;/option&gt;
+	&lt;option value="Uganda"&gt;Uganda&lt;/option&gt;
+	&lt;option value="Ukraine"&gt;Ukraine&lt;/option&gt;
+	&lt;option value="United Arab Emirates"&gt;United Arab Emirates&lt;/option&gt;
+	&lt;option value="United Kingdom"&gt;United Kingdom&lt;/option&gt;
+	&lt;option value="United States Minor Outlying Islands"&gt;United States Minor Outlying Islands&lt;/option&gt;
+	&lt;option value="Uruguay"&gt;Uruguay&lt;/option&gt;
+	&lt;option value="Uzbekistan"&gt;Uzbekistan&lt;/option&gt;
+	&lt;option value="Vanuatu"&gt;Vanuatu&lt;/option&gt;
+	&lt;option value="Venezuela"&gt;Venezuela&lt;/option&gt;
+	&lt;option value="Viet Nam"&gt;Viet Nam&lt;/option&gt;
+	&lt;option value="Virgin Islands, British"&gt;Virgin Islands, British&lt;/option&gt;
+	&lt;option value="Virgin Islands, U.S."&gt;Virgin Islands, U.S.&lt;/option&gt;
+	&lt;option value="Wallis And Futuna"&gt;Wallis And Futuna&lt;/option&gt;
+	&lt;option value="Western Sahara"&gt;Western Sahara&lt;/option&gt;
+	&lt;option value="Yemen"&gt;Yemen&lt;/option&gt;
+	&lt;option value="Yugoslavia"&gt;Yugoslavia&lt;/option&gt;
+	&lt;option value="Zambia"&gt;Zambia&lt;/option&gt;
+	&lt;option value="Zimbabwe"&gt;Zimbabwe&lt;/option&gt;
+&lt;/select&gt;
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+                                            &lt;div id="errorAddressLine1CI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Address Line 1&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxAddressLine1" type="text" id="textBoxAddressLine1" class="input" /&gt;
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Address Line 2&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxAddressLine2" type="text" id="textBoxAddressLine2" class="input" /&gt;
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+                                            &lt;div id="errorCityCI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                            &lt;div id="erroLocalityCI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay" id="labelCity"&gt;City&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxCity" type="text" id="textBoxCity" class="input" /&gt;
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+                                            &lt;div id="errorStateCI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                            &lt;div id="errorProvinceCI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                            &lt;div id="divStateDropDown" class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay" id="labelState"&gt;State&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;select name="dropDownState" id="dropDownState" class="input"&gt;
+	&lt;option selected="selected" value="" disabled="disabled"&gt;&lt;/option&gt;
+	&lt;option value=""&gt;Select One&lt;/option&gt;
+	&lt;option value="AL"&gt;Alabama&lt;/option&gt;
+	&lt;option value="AK"&gt;Alaska&lt;/option&gt;
+	&lt;option value="AS"&gt;American Samoa&lt;/option&gt;
+	&lt;option value="AZ"&gt;Arizona&lt;/option&gt;
+	&lt;option value="AR"&gt;Arkansas&lt;/option&gt;
+	&lt;option value="CA"&gt;California&lt;/option&gt;
+	&lt;option value="CO"&gt;Colorado&lt;/option&gt;
+	&lt;option value="CT"&gt;Connecticut&lt;/option&gt;
+	&lt;option value="DE"&gt;Delaware&lt;/option&gt;
+	&lt;option value="DC"&gt;District of Columbia&lt;/option&gt;
+	&lt;option value="FM"&gt;Federated States of Micronesia&lt;/option&gt;
+	&lt;option value="FL"&gt;Florida&lt;/option&gt;
+	&lt;option value="GA"&gt;Georgia&lt;/option&gt;
+	&lt;option value="GU"&gt;Guam&lt;/option&gt;
+	&lt;option value="HI"&gt;Hawaii&lt;/option&gt;
+	&lt;option value="ID"&gt;Idaho&lt;/option&gt;
+	&lt;option value="IL"&gt;Illinois&lt;/option&gt;
+	&lt;option value="IN"&gt;Indiana&lt;/option&gt;
+	&lt;option value="IA"&gt;Iowa&lt;/option&gt;
+	&lt;option value="KS"&gt;Kansas&lt;/option&gt;
+	&lt;option value="KY"&gt;Kentucky&lt;/option&gt;
+	&lt;option value="LA"&gt;Louisiana&lt;/option&gt;
+	&lt;option value="ME"&gt;Maine&lt;/option&gt;
+	&lt;option value="MH"&gt;Marshall Islands&lt;/option&gt;
+	&lt;option value="MD"&gt;Maryland&lt;/option&gt;
+	&lt;option value="MA"&gt;Massachusetts&lt;/option&gt;
+	&lt;option value="MI"&gt;Michigan&lt;/option&gt;
+	&lt;option value="MN"&gt;Minnesota&lt;/option&gt;
+	&lt;option value="MS"&gt;Mississippi&lt;/option&gt;
+	&lt;option value="MO"&gt;Missouri&lt;/option&gt;
+	&lt;option value="MT"&gt;Montana&lt;/option&gt;
+	&lt;option value="NE"&gt;Nebraska&lt;/option&gt;
+	&lt;option value="NV"&gt;Nevada&lt;/option&gt;
+	&lt;option value="NH"&gt;New Hampshire&lt;/option&gt;
+	&lt;option value="NJ"&gt;New Jersey&lt;/option&gt;
+	&lt;option value="NM"&gt;New Mexico&lt;/option&gt;
+	&lt;option value="NY"&gt;New York&lt;/option&gt;
+	&lt;option value="NC"&gt;North Carolina&lt;/option&gt;
+	&lt;option value="ND"&gt;North Dakota&lt;/option&gt;
+	&lt;option value="MP"&gt;Northern Mariana Islands&lt;/option&gt;
+	&lt;option value="OH"&gt;Ohio&lt;/option&gt;
+	&lt;option value="OK"&gt;Oklahoma&lt;/option&gt;
+	&lt;option value="OR"&gt;Oregon&lt;/option&gt;
+	&lt;option value="PW"&gt;Palau&lt;/option&gt;
+	&lt;option value="PA"&gt;Pennsylvania&lt;/option&gt;
+	&lt;option value="PR"&gt;Puerto Rico&lt;/option&gt;
+	&lt;option value="RI"&gt;Rhode Island&lt;/option&gt;
+	&lt;option value="SC"&gt;South Carolina&lt;/option&gt;
+	&lt;option value="SD"&gt;South Dakota&lt;/option&gt;
+	&lt;option value="TN"&gt;Tennessee&lt;/option&gt;
+	&lt;option value="TX"&gt;Texas&lt;/option&gt;
+	&lt;option value="UT"&gt;Utah&lt;/option&gt;
+	&lt;option value="VT"&gt;Vermont&lt;/option&gt;
+	&lt;option value="VI"&gt;Virgin Islands&lt;/option&gt;
+	&lt;option value="VA"&gt;Virginia&lt;/option&gt;
+	&lt;option value="WA"&gt;Washington&lt;/option&gt;
+	&lt;option value="WV"&gt;West Virginia&lt;/option&gt;
+	&lt;option value="WI"&gt;Wisconsin&lt;/option&gt;
+	&lt;option value="WY"&gt;Wyoming&lt;/option&gt;
+	&lt;option value="AA"&gt;Armed Forces (the) Americas&lt;/option&gt;
+	&lt;option value="AE"&gt;Armed Forces Europe&lt;/option&gt;
+	&lt;option value="AP"&gt;Armed Forces Pacific&lt;/option&gt;
+&lt;/select&gt;
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+
+                                            &lt;div id="divStateTextbox" class="inputAndLabel hidden"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay" id="labelState"&gt;Province&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxState" type="text" id="textBoxState" class="input" /&gt;
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+
+                                            &lt;div id="errorPostalCodeCI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay" id="labelPostalCode"&gt;Zip Code&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxPostalCode" type="text" id="textBoxPostalCode" class="input" /&gt;
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+
+                                            &lt;div class="button"&gt;
+                                                &lt;button type="button" onclick="PreviousStepClicked(this);" class="primaryPassive"&gt;Back&lt;/button&gt;
+                                                &lt;button type="button" onclick="NextStepClicked(this);" class="primary"&gt;Next&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div id="contactInfoSubStep1" class="headerWithFields"&gt;
+
+                                    &lt;h3&gt;&lt;span id="contactInfoSubStep1Icon" class="fa fa-plus-square-o collapsed"&gt;&lt;/span&gt; Phone Number&lt;span class="required"&gt;*&lt;/span&gt; &lt;a class="helpIcon"&gt;&lt;span class="fa fa-question-circle fa-lg"&gt;&lt;/span&gt;&lt;/a&gt;
+                                        &lt;div class="helpDiv"&gt;
+                                            You must enter at least one phone number.  
+                                        &lt;/div&gt;
+                                    &lt;/h3&gt;
+
+                                    &lt;div id="contactInfoSubStep1CollaspableDiv" class="collapsable" style="display: none;"&gt;
+                                        &lt;div id="errorPhoneNumberCI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                        &lt;div class="inputCluster"&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Cell Phone&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxCellPhone" type="text" id="textBoxCellPhone" class="input phoneNumber" /&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Home Phone&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxHomePhone" type="text" id="textBoxHomePhone" class="input phoneNumber" /&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Work Phone&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxWorkPhone" type="text" id="textBoxWorkPhone" class="input phoneNumber" /&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div class="button"&gt;
+                                                &lt;button type="button" class="primaryPassive" onclick="PreviousStepClicked(this);"&gt;Back&lt;/button&gt;
+                                                &lt;button type="button" class="primary" onclick="NextStepClicked(this);"&gt;Next&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;div id="Step4" class="hidden"&gt;
+                                &lt;h2&gt;Membership Information&lt;/h2&gt;
+                                &lt;div id="errorGeneralMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                &lt;div id="divRetired" class="visible"&gt;
+                                    &lt;h3&gt;Retired Membership&lt;/h3&gt;
+
+                                    &lt;div class="information"&gt;
+                                        If you no longer practice medical imaging and/or radiation therapy, you may qualify as a retired member. Please review the &lt;a class="underlined" href="http://www.asrt.org/retired" target="_blank"&gt;definition of terms&lt;/a&gt;
+                                        prior to calling Member Services at 800-444-2778 Press 5.
+                                    &lt;/div&gt;
+
+                                    &lt;div id="retiredQuestionDiv" class="inputCluster hidden"&gt;
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;div&gt;Does the statement above apply to you?&lt;/div&gt;
+                                            &lt;input value="true" name="retired" type="radio" id="radioButtonRetiredYes" onchange="RetiredChanged(this);" /&gt;&lt;label for="radioButtonRetiredYes"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Yes
+                                    &lt;input value="false" name="retired" type="radio" id="radioButtonRetiredNo" onchange="RetiredChanged(this);" /&gt;&lt;label for="radioButtonRetiredNo"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;No
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div id="membershipInfoSubStep0" class="hidden"&gt;
+                                    &lt;h3 id="membershipInfoSubStep0Header"&gt;ARRT&lt;/h3&gt;
+                                    &lt;div id="errorARRTMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                    &lt;div id="membershipInfoSubStep0ControlsDiv" class="inputCluster"&gt;
+
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;div&gt;Are you currently registered with the ARRT?&lt;span class="required"&gt;*&lt;/span&gt;&lt;/div&gt;
+                                            &lt;!--name has to be the same so that it functions as a radio button toggle--&gt;
+                                            &lt;input value="true" name="arrtRegistered" type="radio" id="radioButtonARRTRegistered" onchange="ARRTChanged(this);" /&gt;&lt;label for="radioButtonARRTRegistered"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Yes
+                                &lt;input value="false" name="arrtRegistered" type="radio" id="radioButtonNOTARRTRegistered" onchange="ARRTChanged(this);" /&gt;&lt;label for="radioButtonNOTARRTRegistered"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;No                              
+                                        &lt;/div&gt;
+                                        &lt;div id="divArrtRegistered" class="hidden"&gt;
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Registry #&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxARRTRegistryNumber" type="text" id="textBoxARRTRegistryNumber" class="input" /&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;input type="checkbox" id="checkBoxRegistryNumberUnknown" /&gt;&lt;label for="checkBoxRegistryNumberUnknown"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+                                                I do not know my ARRT number
+                                        &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                Click &lt;a href="https://www.arrt.org/account" target="_blank"&gt;here&lt;/a&gt; to check the ARRT site.
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="button"&gt;
+                                            &lt;button type="button" class="primaryPassive" onclick="PreviousStepClicked(this);"&gt;Back&lt;/button&gt;
+                                            &lt;button id="membershipInfoSubStep0NextButton" type="button" class="primary hidden" onclick="NextStepClicked(this);"&gt;Next&lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div id="membershipInfoSubStep1" class="hidden"&gt;
+                                    &lt;h3 id="membershipInfoSubStep1Header"&gt;Other Registries&lt;/h3&gt;
+                                    &lt;div id="membershipInfoSubStep1ControlsDiv" class="inputCluster"&gt;
+
+
+                                        &lt;div&gt;Are you registered with the following?&lt;span class="required"&gt;*&lt;/span&gt;&lt;/div&gt;
+                                        &lt;input value="true" name="hasOtherRegistries" type="radio" id="radioButtonHasOtherRegistries" onchange="OtherRegistriesChanged(this);" /&gt;&lt;label for="radioButtonHasOtherRegistries"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Yes
+                                &lt;input value="false" name="hasOtherRegistries" type="radio" id="radioButtonDoesNotHaveOtherRegistries" onchange="OtherRegistriesChanged(this);" /&gt;&lt;label for="radioButtonDoesNotHaveOtherRegistries"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;No
+                            
+                                &lt;div style="width: 50%; margin-bottom: 10px;"&gt;
+
+                                    &lt;div class="section group inputAndLabel"&gt;
+                                        &lt;p&gt;Select one or more registries below.&lt;/p&gt;
+                                        &lt;div id="errorARDMSMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                        &lt;div class="col span_1_of_3"&gt;
+                                            &lt;input name="hasARDMS" type="checkbox" id="hasARDMS" value="ARDMS" onclick="RegistrySelected(this);" /&gt;&lt;label for="hasARDMS"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+                                            ARDMS
+                                        &lt;/div&gt;
+                                        &lt;div class="col span_1_of_3"&gt;
+                                            &lt;div id="divARDMSRegistryInfo" class="registryInfo hidden"&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Registry #&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="ARDMSRegistyNumber" type="text" id="ARDMSRegistyNumber" class="input" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Start Date&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="ARDMSStartDate" type="text" id="ARDMSStartDate" class="input DatePicker hasDatepicker" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;End Date&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="ARDMSEndDate" type="text" id="ARDMSEndDate" class="input DatePicker hasDatepicker" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="section group inputAndLabel"&gt;
+                                        &lt;div id="errorNMTCBMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                        &lt;div class="col span_1_of_3"&gt;
+                                            &lt;input name="hasNMTCB" type="checkbox" id="hasNMTCB" value="NMTCB" onclick="RegistrySelected(this);" /&gt;&lt;label for="hasNMTCB"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+                                            NMTCB
+                                        &lt;/div&gt;
+                                        &lt;div class="col span_1_of_3"&gt;
+
+                                            &lt;div id="divNMTCBRegistryInfo" class="registryInfo hidden"&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Registry #&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="NMTCBRegistyNumber" type="text" id="NMTCBRegistyNumber" class="input" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Start Date&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="NMTCBStartDate" type="text" id="NMTCBStartDate" class="input DatePicker hasDatepicker" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;End Date&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="NMTCBEndDate" type="text" id="NMTCBEndDate" class="input DatePicker hasDatepicker" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="section group inputAndLabel"&gt;
+                                        &lt;div id="errorMDCBMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                        &lt;div class="col span_1_of_3"&gt;
+                                            &lt;input name="hasMDCB" type="checkbox" id="hasMDCB" value="MDCB" onclick="RegistrySelected(this);" /&gt;&lt;label for="hasMDCB"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+                                            MDCB
+                                        &lt;/div&gt;
+                                        &lt;div class="col span_1_of_3"&gt;
+                                            &lt;div id="divMDCBRegistryInfo" class="registryInfo hidden"&gt;
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Registry #&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="MDCBRegistyNumber" type="text" id="MDCBRegistyNumber" class="input" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Start Date&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="MDCBStartDate" type="text" id="MDCBStartDate" class="input DatePicker hasDatepicker" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;End Date&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="MDCBEndDate" type="text" id="MDCBEndDate" class="input DatePicker hasDatepicker" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;div class="label"&gt;
+                                                &lt;label class="overlay"&gt;Original Certification Date&lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="input"&gt;
+                                                &lt;input name="textBoxOriginalCertificationDate" type="text" id="textBoxOriginalCertificationDate" class="input DatePicker hasDatepicker" /&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="button"&gt;
+                                            &lt;button type="button" class="primaryPassive" onclick="PreviousStepClicked(this);"&gt;Back&lt;/button&gt;
+                                            &lt;button id="membershipInfoSubStep1NextButton" type="button" class="primary hidden" onclick="NextStepClicked(this);"&gt;Next&lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div id="membershipInfoSubStep2" class="hidden"&gt;
+                                    &lt;h3 id="membershipInfoSubStep2Header"&gt;Florida Track and Transfer&lt;/h3&gt;
+                                    &lt;div class="inputCluster"&gt;
+
+                                        &lt;div id="membershipInfoSubStep2ControlsDiv" class="inputAndLabel"&gt;
+                                            &lt;div&gt;Are you currently licensed in Florida?&lt;span class="required"&gt;*&lt;/span&gt;&lt;/div&gt;
+                                            &lt;input value="true" name="hasFLLicense" type="radio" id="hasFLStateLicense" onchange="FLLicenseChanged(this);" /&gt;&lt;label for="hasFLStateLicense"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Yes
+                                &lt;input value="false" name="hasFLLicense" type="radio" id="doesNotHaveFLStateLicense" onchange="FLLicenseChanged(this);" /&gt;&lt;label for="doesNotHaveFLStateLicense"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;No
+                                        &lt;/div&gt;
+
+                                        &lt;div id="divHasFLLicense" class="hidden"&gt;
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;License #&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input class="input" type="text" id="textBoxFLRegistryNumber" /&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Expiration Date&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="flStateLicenseExpirationDate" type="text" id="flStateLicenseExpirationDate" class="input DatePicker hasDatepicker" /&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div id="errorLast4SSNMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                            &lt;div class="inputAndLabel "&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Last 4 of SSN&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input class="input" type="number" id="textBoxFLLast4SSN" /&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="button"&gt;
+                                            &lt;button type="button" class="primaryPassive" onclick="PreviousStepClicked(this);"&gt;Back&lt;/button&gt;
+                                            &lt;button id="membershipInfoSubStep2NextButton" type="button" class="primary hidden" onclick="NextStepClicked(this);"&gt;Next&lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div id="membershipInfoSubStep3" class="hidden"&gt;
+                                    &lt;h3 id="membershipInfoSubStep3Header"&gt;State License Information&lt;/h3&gt;
+
+                                    &lt;div id="membershipInfoSubStep3ControlsDiv" class="inputCluster"&gt;
+
+                                        &lt;div&gt;Are you currently licensed by any state?&lt;span class="required"&gt;*&lt;/span&gt;&lt;/div&gt;
+                                        &lt;input value="true" name="hasStateLicense" type="radio" id="radioButtonHasStateLicenses" onchange="StateLicensesChanged(this);" /&gt;&lt;label for="radioButtonHasStateLicenses"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Yes
+                                &lt;input value="false" name="hasStateLicense" type="radio" id="radioButtonDoesNotHaveStateLicenses" onchange="StateLicensesChanged(this);" /&gt;&lt;label for="radioButtonDoesNotHaveStateLicenses"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;No
+                                
+                               &lt;div id="divHasStateLicenses" class="hidden"&gt;
+                                   &lt;div class="section group"&gt;
+
+                                       &lt;div class="col span_1_of_3"&gt;
+                                           &lt;input type="checkbox" id="license1" /&gt;&lt;label for="license1"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+                                           Licensed
+                                       &lt;/div&gt;
+                                       &lt;div class="col span_2_of_3"&gt;
+                                           &lt;div class="inputAndLabel"&gt;
+                                               &lt;div class="label"&gt;
+                                                   &lt;label class="overlay"&gt;State&lt;/label&gt;
+                                               &lt;/div&gt;
+                                               &lt;div class="input"&gt;
+                                                   &lt;select name="license1State" id="license1State" class="input" onchange="StateDropDownChanged(this);"&gt;
+	&lt;option selected="selected" value="" disabled="disabled"&gt;&lt;/option&gt;
+	&lt;option value=""&gt;Select One&lt;/option&gt;
+	&lt;option value="AL"&gt;Alabama&lt;/option&gt;
+	&lt;option value="AK"&gt;Alaska&lt;/option&gt;
+	&lt;option value="AS"&gt;American Samoa&lt;/option&gt;
+	&lt;option value="AZ"&gt;Arizona&lt;/option&gt;
+	&lt;option value="AR"&gt;Arkansas&lt;/option&gt;
+	&lt;option value="CA"&gt;California&lt;/option&gt;
+	&lt;option value="CO"&gt;Colorado&lt;/option&gt;
+	&lt;option value="CT"&gt;Connecticut&lt;/option&gt;
+	&lt;option value="DE"&gt;Delaware&lt;/option&gt;
+	&lt;option value="DC"&gt;District of Columbia&lt;/option&gt;
+	&lt;option value="FM"&gt;Federated States of Micronesia&lt;/option&gt;
+	&lt;option value="FL"&gt;Florida&lt;/option&gt;
+	&lt;option value="GA"&gt;Georgia&lt;/option&gt;
+	&lt;option value="GU"&gt;Guam&lt;/option&gt;
+	&lt;option value="HI"&gt;Hawaii&lt;/option&gt;
+	&lt;option value="ID"&gt;Idaho&lt;/option&gt;
+	&lt;option value="IL"&gt;Illinois&lt;/option&gt;
+	&lt;option value="IN"&gt;Indiana&lt;/option&gt;
+	&lt;option value="IA"&gt;Iowa&lt;/option&gt;
+	&lt;option value="KS"&gt;Kansas&lt;/option&gt;
+	&lt;option value="KY"&gt;Kentucky&lt;/option&gt;
+	&lt;option value="LA"&gt;Louisiana&lt;/option&gt;
+	&lt;option value="ME"&gt;Maine&lt;/option&gt;
+	&lt;option value="MH"&gt;Marshall Islands&lt;/option&gt;
+	&lt;option value="MD"&gt;Maryland&lt;/option&gt;
+	&lt;option value="MA"&gt;Massachusetts&lt;/option&gt;
+	&lt;option value="MI"&gt;Michigan&lt;/option&gt;
+	&lt;option value="MN"&gt;Minnesota&lt;/option&gt;
+	&lt;option value="MS"&gt;Mississippi&lt;/option&gt;
+	&lt;option value="MO"&gt;Missouri&lt;/option&gt;
+	&lt;option value="MT"&gt;Montana&lt;/option&gt;
+	&lt;option value="NE"&gt;Nebraska&lt;/option&gt;
+	&lt;option value="NV"&gt;Nevada&lt;/option&gt;
+	&lt;option value="NH"&gt;New Hampshire&lt;/option&gt;
+	&lt;option value="NJ"&gt;New Jersey&lt;/option&gt;
+	&lt;option value="NM"&gt;New Mexico&lt;/option&gt;
+	&lt;option value="NY"&gt;New York&lt;/option&gt;
+	&lt;option value="NC"&gt;North Carolina&lt;/option&gt;
+	&lt;option value="ND"&gt;North Dakota&lt;/option&gt;
+	&lt;option value="MP"&gt;Northern Mariana Islands&lt;/option&gt;
+	&lt;option value="OH"&gt;Ohio&lt;/option&gt;
+	&lt;option value="OK"&gt;Oklahoma&lt;/option&gt;
+	&lt;option value="OR"&gt;Oregon&lt;/option&gt;
+	&lt;option value="PW"&gt;Palau&lt;/option&gt;
+	&lt;option value="PA"&gt;Pennsylvania&lt;/option&gt;
+	&lt;option value="PR"&gt;Puerto Rico&lt;/option&gt;
+	&lt;option value="RI"&gt;Rhode Island&lt;/option&gt;
+	&lt;option value="SC"&gt;South Carolina&lt;/option&gt;
+	&lt;option value="SD"&gt;South Dakota&lt;/option&gt;
+	&lt;option value="TN"&gt;Tennessee&lt;/option&gt;
+	&lt;option value="TX"&gt;Texas&lt;/option&gt;
+	&lt;option value="UT"&gt;Utah&lt;/option&gt;
+	&lt;option value="VT"&gt;Vermont&lt;/option&gt;
+	&lt;option value="VI"&gt;Virgin Islands&lt;/option&gt;
+	&lt;option value="VA"&gt;Virginia&lt;/option&gt;
+	&lt;option value="WA"&gt;Washington&lt;/option&gt;
+	&lt;option value="WV"&gt;West Virginia&lt;/option&gt;
+	&lt;option value="WI"&gt;Wisconsin&lt;/option&gt;
+	&lt;option value="WY"&gt;Wyoming&lt;/option&gt;
+	&lt;option value="AA"&gt;Armed Forces (the) Americas&lt;/option&gt;
+	&lt;option value="AE"&gt;Armed Forces Europe&lt;/option&gt;
+	&lt;option value="AP"&gt;Armed Forces Pacific&lt;/option&gt;
+&lt;/select&gt;
+                                               &lt;/div&gt;
+
+
+                                           &lt;/div&gt;
+                                           &lt;div class="inputAndLabel "&gt;
+                                               &lt;div class="label"&gt;
+                                                   &lt;label class="overlay"&gt;License Expiration Date&lt;/label&gt;
+                                               &lt;/div&gt;
+                                               &lt;div class="input"&gt;
+                                                   &lt;input name="license1ExpirationDate" type="text" id="license1ExpirationDate" class="input DatePicker hasDatepicker" /&gt;
+                                               &lt;/div&gt;
+
+
+                                           &lt;/div&gt;
+                                           &lt;div class="inputAndLabel "&gt;
+                                               &lt;input name="license1UnRestricted" type="checkbox" id="license1UnRestricted" /&gt;&lt;label for="license1UnRestricted"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+                                               Unrestricted                                             
+                                           &lt;/div&gt;
+                                           &lt;div id="errorlicense1StateLast4SSN" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                           &lt;div class="inputAndLabel hidden" id="divLast4SSN"&gt;
+                                               &lt;div class="label"&gt;
+                                                   &lt;label class="overlay"&gt;Last 4 of SSN&lt;/label&gt;
+                                               &lt;/div&gt;
+                                               &lt;div class="input"&gt;
+                                                   &lt;input class="input" type="number" id="textBoxlicense1Last4SSN" /&gt;
+                                               &lt;/div&gt;
+
+
+                                           &lt;/div&gt;
+                                       &lt;/div&gt;
+                                   &lt;/div&gt;
+
+                                   &lt;div class="section group"&gt;
+
+                                       &lt;div class="col span_1_of_3"&gt;
+                                           &lt;input type="checkbox" id="license2" /&gt;&lt;label for="license2"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+                                           Licensed
+                                       &lt;/div&gt;
+                                       &lt;div class="col span_2_of_3"&gt;
+                                           &lt;div class="inputAndLabel"&gt;
+                                               &lt;div class="label"&gt;
+                                                   &lt;label class="overlay"&gt;State&lt;/label&gt;
+                                               &lt;/div&gt;
+                                               &lt;div class="input"&gt;
+                                                   &lt;select name="license2State" id="license2State" class="input" onchange="StateDropDownChanged(this);"&gt;
+	&lt;option selected="selected" value="" disabled="disabled"&gt;&lt;/option&gt;
+	&lt;option value=""&gt;Select One&lt;/option&gt;
+	&lt;option value="AL"&gt;Alabama&lt;/option&gt;
+	&lt;option value="AK"&gt;Alaska&lt;/option&gt;
+	&lt;option value="AS"&gt;American Samoa&lt;/option&gt;
+	&lt;option value="AZ"&gt;Arizona&lt;/option&gt;
+	&lt;option value="AR"&gt;Arkansas&lt;/option&gt;
+	&lt;option value="CA"&gt;California&lt;/option&gt;
+	&lt;option value="CO"&gt;Colorado&lt;/option&gt;
+	&lt;option value="CT"&gt;Connecticut&lt;/option&gt;
+	&lt;option value="DE"&gt;Delaware&lt;/option&gt;
+	&lt;option value="DC"&gt;District of Columbia&lt;/option&gt;
+	&lt;option value="FM"&gt;Federated States of Micronesia&lt;/option&gt;
+	&lt;option value="FL"&gt;Florida&lt;/option&gt;
+	&lt;option value="GA"&gt;Georgia&lt;/option&gt;
+	&lt;option value="GU"&gt;Guam&lt;/option&gt;
+	&lt;option value="HI"&gt;Hawaii&lt;/option&gt;
+	&lt;option value="ID"&gt;Idaho&lt;/option&gt;
+	&lt;option value="IL"&gt;Illinois&lt;/option&gt;
+	&lt;option value="IN"&gt;Indiana&lt;/option&gt;
+	&lt;option value="IA"&gt;Iowa&lt;/option&gt;
+	&lt;option value="KS"&gt;Kansas&lt;/option&gt;
+	&lt;option value="KY"&gt;Kentucky&lt;/option&gt;
+	&lt;option value="LA"&gt;Louisiana&lt;/option&gt;
+	&lt;option value="ME"&gt;Maine&lt;/option&gt;
+	&lt;option value="MH"&gt;Marshall Islands&lt;/option&gt;
+	&lt;option value="MD"&gt;Maryland&lt;/option&gt;
+	&lt;option value="MA"&gt;Massachusetts&lt;/option&gt;
+	&lt;option value="MI"&gt;Michigan&lt;/option&gt;
+	&lt;option value="MN"&gt;Minnesota&lt;/option&gt;
+	&lt;option value="MS"&gt;Mississippi&lt;/option&gt;
+	&lt;option value="MO"&gt;Missouri&lt;/option&gt;
+	&lt;option value="MT"&gt;Montana&lt;/option&gt;
+	&lt;option value="NE"&gt;Nebraska&lt;/option&gt;
+	&lt;option value="NV"&gt;Nevada&lt;/option&gt;
+	&lt;option value="NH"&gt;New Hampshire&lt;/option&gt;
+	&lt;option value="NJ"&gt;New Jersey&lt;/option&gt;
+	&lt;option value="NM"&gt;New Mexico&lt;/option&gt;
+	&lt;option value="NY"&gt;New York&lt;/option&gt;
+	&lt;option value="NC"&gt;North Carolina&lt;/option&gt;
+	&lt;option value="ND"&gt;North Dakota&lt;/option&gt;
+	&lt;option value="MP"&gt;Northern Mariana Islands&lt;/option&gt;
+	&lt;option value="OH"&gt;Ohio&lt;/option&gt;
+	&lt;option value="OK"&gt;Oklahoma&lt;/option&gt;
+	&lt;option value="OR"&gt;Oregon&lt;/option&gt;
+	&lt;option value="PW"&gt;Palau&lt;/option&gt;
+	&lt;option value="PA"&gt;Pennsylvania&lt;/option&gt;
+	&lt;option value="PR"&gt;Puerto Rico&lt;/option&gt;
+	&lt;option value="RI"&gt;Rhode Island&lt;/option&gt;
+	&lt;option value="SC"&gt;South Carolina&lt;/option&gt;
+	&lt;option value="SD"&gt;South Dakota&lt;/option&gt;
+	&lt;option value="TN"&gt;Tennessee&lt;/option&gt;
+	&lt;option value="TX"&gt;Texas&lt;/option&gt;
+	&lt;option value="UT"&gt;Utah&lt;/option&gt;
+	&lt;option value="VT"&gt;Vermont&lt;/option&gt;
+	&lt;option value="VI"&gt;Virgin Islands&lt;/option&gt;
+	&lt;option value="VA"&gt;Virginia&lt;/option&gt;
+	&lt;option value="WA"&gt;Washington&lt;/option&gt;
+	&lt;option value="WV"&gt;West Virginia&lt;/option&gt;
+	&lt;option value="WI"&gt;Wisconsin&lt;/option&gt;
+	&lt;option value="WY"&gt;Wyoming&lt;/option&gt;
+	&lt;option value="AA"&gt;Armed Forces (the) Americas&lt;/option&gt;
+	&lt;option value="AE"&gt;Armed Forces Europe&lt;/option&gt;
+	&lt;option value="AP"&gt;Armed Forces Pacific&lt;/option&gt;
+&lt;/select&gt;
+                                               &lt;/div&gt;
+
+
+                                           &lt;/div&gt;
+                                           &lt;div class="inputAndLabel "&gt;
+                                               &lt;div class="label"&gt;
+                                                   &lt;label class="overlay"&gt;License Expiration Date&lt;/label&gt;
+                                               &lt;/div&gt;
+                                               &lt;div class="input"&gt;
+                                                   &lt;input name="license2ExpirationDate" type="text" id="license2ExpirationDate" class="input DatePicker hasDatepicker" /&gt;
+                                               &lt;/div&gt;
+
+
+                                           &lt;/div&gt;
+                                           &lt;div class="inputAndLabel "&gt;
+                                               &lt;input name="license2UnRestricted" type="checkbox" id="license2UnRestricted" /&gt;&lt;label for="license2UnRestricted"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+                                               Unrestricted
+                                           &lt;/div&gt;
+                                           &lt;div id="errorlicense2StateLast4SSN" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                           &lt;div class="inputAndLabel hidden" id="divLast4SSN"&gt;
+                                               &lt;div class="label"&gt;
+                                                   &lt;label class="overlay"&gt;Last 4 of SSN&lt;/label&gt;
+                                               &lt;/div&gt;
+                                               &lt;div class="input"&gt;
+                                                   &lt;input class="input" type="number" id="textBoxlicense2Last4SSN" /&gt;
+                                               &lt;/div&gt;
+
+
+                                           &lt;/div&gt;
+                                       &lt;/div&gt;
+                                   &lt;/div&gt;
+                               &lt;/div&gt;
+                                        &lt;div class="button"&gt;
+                                            &lt;button type="button" class="primaryPassive" onclick="PreviousStepClicked(this);"&gt;Back&lt;/button&gt;
+                                            &lt;button id="membershipInfoSubStep3NextButton" type="button" class="primary hidden" onclick="NextStepClicked(this);"&gt;Next&lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div id="membershipInfoSubStep4" class="hidden"&gt;
+                                    &lt;h3 id="membershipInfoSubStep4Header"&gt;Education Information&lt;/h3&gt;
+                                    &lt;div id="membershipInfoSubStep4ControlsDiv" class="inputCluster"&gt;
+
+
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;div&gt;Have you graduated from an accredited school within the last 24 months?&lt;span class="required"&gt;*&lt;/span&gt;&lt;/div&gt;
+                                            &lt;input value="true" name="hasGraduated" type="radio" id="radioButtonHasGraduated" onchange="GraduatedChanged(this);" /&gt;&lt;label for="radioButtonHasGraduated"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Yes
+                                &lt;input value="false" name="hasGraduated" type="radio" id="radioButtonHasNotGraduated" onchange="GraduatedChanged(this);" /&gt;&lt;label for="radioButtonHasNotGraduated"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;No                               
+                                        &lt;/div&gt;
+
+                                        &lt;div id="divHasGraduated" class="hidden"&gt;
+                                            &lt;div id="errorDateOfGraduationMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Date of Graduation&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textboxDoG" type="text" id="textboxDoG" class="input DatePicker hasDatepicker" /&gt;
+                                                &lt;/div&gt;
+
+
+                                            &lt;/div&gt;
+                                            &lt;div id="errorInstitutionNameMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Institution Name&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxGraduatedFrom" type="text" id="textBoxGraduatedFrom" class="input" /&gt;
+                                                &lt;/div&gt;
+
+
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div id="divHasNotGraduated" class="hidden"&gt;
+                                            &lt;div class="inputAndLabel"&gt;
+
+                                                &lt;div&gt;Are you currently enrolled in a medical imaging or radiation therapy program to earn your primary certification?&lt;span class="required"&gt;*&lt;/span&gt;&lt;/div&gt;
+                                                &lt;input value="true" name="inSchool" type="radio" id="radioButtonInSchool" onchange="InSchoolChanged(this);" /&gt;&lt;label for="radioButtonInSchool"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Yes
+                                    &lt;input value="false" name="inSchool" type="radio" id="radioButtonNotInSchool" onchange="InSchoolChanged(this);" /&gt;&lt;label for="radioButtonNotInSchool"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;No   
+                                                                  
+                                            &lt;/div&gt;
+
+                                            &lt;div id="divInSchool" class="hidden"&gt;
+                                                &lt;div id="errorEstimatedDateOfGraduationMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Estimated Date of Graduation&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="textboxEDoG" type="text" id="textboxEDoG" class="input DatePicker hasDatepicker" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+                                                &lt;div id="errorInstitutionNameMI" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Institution Name&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="textBoxEnrolledAt" type="text" id="textBoxEnrolledAt" class="input" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="button"&gt;
+                                            &lt;button type="button" class="primaryPassive" onclick="PreviousStepClicked(this);"&gt;Back&lt;/button&gt;
+                                            &lt;button id="membershipInfoSubStep4NextButton" type="button" class="primary hidden" onclick="NextStepClicked(this);"&gt;Next&lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;div id="Step5" class="hidden"&gt;
+                                &lt;h2&gt;Membership Options &lt;/h2&gt;
+                                &lt;div id="errorGeneralMO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                &lt;div class="inputCluster"&gt;
+                                    &lt;div id="divMembershipOptions" class="inputAndLabel"&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="divAutoRenewal" class="inputAndLabel" style="display: none"&gt;
+                                        &lt;input name="checkboxAutoRenewal" type="checkbox" id="checkboxAutoRenewal" /&gt;&lt;label for="checkboxAutoRenewal"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Automatically renew my membership each year!  &lt;a class="helpIcon"&gt;&lt;span class="fa fa-question-circle fa-lg"&gt;&lt;/span&gt;&lt;/a&gt;
+                                        &lt;div class="helpDiv"&gt;
+                                            Never forget to renew your membership again! By selecting automatic renewal, you authorize ASRT to charge your credit card 30 days before your membership expiration date
+                                so you may continue receiving uninterrupted access to your member benefits.
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="divFlexOption" class="headerWithFields"&gt;
+                                        &lt;h3&gt;DR Flex Plan™&lt;/h3&gt;
+                                        &lt;p&gt;
+                                            The Directed Reading Flex plan™ gives you immediate access to 15 credits per year (18 credits with Premium Membership) of membership purchased, an extensive collection of Directed Readings, and the ability to use your credits when you want and how you want.
+                                        &lt;/p&gt;
+                                        &lt;p&gt;
+                                            When choosing the DR Flex Plan™ and installment payments (where applicable), you will receive access to half of your CE credits immediately (7.5 CE credits, or 9 CE credits if you choose the Premium option). 
+                                Access to the remaining credits will become available when the second installment is processed 90 days after the first payment.
+                                        &lt;/p&gt;
+
+                                        &lt;a onclick="ComparePlansClicked(this);"&gt;&lt;span class="fa fa-plus-square-o collapsed"&gt;&lt;/span&gt; Compare Plans&lt;/a&gt;
+                                        &lt;div id="divPlanComparison" style="display: none;"&gt;
+                                            &lt;table class="responsive_table"&gt;
+                                                &lt;thead&gt;
+                                                    &lt;tr&gt;&lt;th&gt;Feature&lt;/th&gt;
+                                                    &lt;th&gt;Traditional Plan&lt;/th&gt;
+                                                    &lt;th&gt;DR Flex Plan™&lt;/th&gt;
+                                                &lt;/tr&gt;&lt;/thead&gt;
+                                                &lt;tbody&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td data-title="Feature"&gt;Online journal access&lt;/td&gt;
+                                                        &lt;td data-title="Traditional Plan" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                        &lt;td data-title="Flex Plan™" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td data-title="Feature"&gt;Receive journal by mail&lt;/td&gt;
+                                                        &lt;td data-title="Traditional Plan" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                        &lt;td data-title="Flex Plan™" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td data-title="Feature"&gt;Annual cost of $125&lt;/td&gt;
+                                                        &lt;td data-title="Traditional Plan" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                        &lt;td data-title="Flex Plan™" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td data-title="Feature"&gt;Submit DR quizzes online or by mail&lt;/td&gt;
+                                                        &lt;td data-title="Traditional Plan" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                        &lt;td data-title="Flex Plan™" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td data-title="Feature"&gt;Unlimited tracking and transfer of credits&lt;/td&gt;
+                                                        &lt;td data-title="Traditional Plan" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                        &lt;td data-title="Flex Plan™" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td data-title="Feature"&gt;Access to any DR from ASRT’s catalog&lt;/td&gt;
+                                                        &lt;td data-title="Traditional Plan" class="textAlignCenter"&gt;&lt;span class="fa fa-times"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                        &lt;td data-title="Flex Plan™" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td data-title="Feature"&gt;Instant access to CE credits&lt;/td&gt;
+                                                        &lt;td data-title="Traditional Plan" class="textAlignCenter"&gt;&lt;span class="fa fa-times"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                        &lt;td data-title="Flex Plan™" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td data-title="Feature"&gt;Content in 0.25 and 0.5 CE credit increments&lt;/td&gt;
+                                                        &lt;td data-title="Traditional Plan" class="textAlignCenter"&gt;&lt;span class="fa fa-times"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                        &lt;td data-title="Flex Plan™" class="textAlignCenter"&gt;&lt;span class="fa fa-check orangeText"&gt;&lt;/span&gt;&lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td&gt;&lt;a href="https://www.asrt.org/promotions/flex" target="_blank"&gt;Read More About the Directed Reading Flex Plan™&lt;/a&gt;&lt;/td&gt;
+                                                        &lt;td&gt;&lt;/td&gt;
+                                                        &lt;td&gt;&lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/tbody&gt;
+                                            &lt;/table&gt;
+                                        &lt;/div&gt;
+                                        &lt;br /&gt;
+                                        &lt;br /&gt;
+                                        &lt;div id="errorPlanTypeMO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                        &lt;div class="radioTriSwitch inputAndLabel"&gt;
+                                            &lt;div&gt;
+                                                Choose a Plan:
+                                            &lt;/div&gt;
+                                            &lt;div&gt;
+                                                &lt;input value="1" name="planOption" type="radio" id="traditionMembershipOption" /&gt;
+                                                &lt;label for="traditionMembershipOption"&gt;
+                                                    &lt;div&gt;
+
+                                                        &lt;img src="https://media.asrt.org/images/apps/btn_traditionalplan_on.jpg" /&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/label&gt;
+                                                &lt;input type="radio" name="planOption" id="flexPlanSpacer" disabled="disabled" /&gt;
+                                                &lt;label for="flexPlanSpacer" class="nonSelectable"&gt;
+                                                    &lt;div style="padding-left: 15px;"&gt; &lt;/div&gt;
+
+                                                &lt;/label&gt;
+                                                &lt;input value="2" name="planOption" type="radio" id="flexMembershipOption" /&gt;
+                                                &lt;label for="flexMembershipOption"&gt;
+                                                    &lt;div&gt;
+                                                        &lt;img src="https://media.asrt.org/images/apps/btn_flexplan_on.jpg" /&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+                                    &lt;div style="clear: both;"&gt;&lt;/div&gt;
+                                    &lt;div id="divExtendedGrace" class="headerWithFields" style="display: none"&gt;
+                                        &lt;h3&gt;Join Date&lt;/h3&gt;
+                                        &lt;div&gt;
+                                            Would you like your Join Date to be reset to today upon submitting your order? &lt;a class="helpIcon"&gt;&lt;span class="fa fa-question-circle fa-lg"&gt;&lt;/span&gt;&lt;/a&gt;
+                                            &lt;div class="helpDiv"&gt;
+                                                Active members have access to new and existing Directed Readings as part of their current membership period. Your join date and paid-through dates define your ASRT membership period.
+                                                        &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                Since your membership expired over three months ago, you may opt for a new membership period or extend the existing one. 
+                                                        &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                If you wish to extend your current membership period, choose Yes. Otherwise, if you wish to start a new membership period, choose No and continue the process.
+                                                        &lt;br /&gt;
+                                                &lt;br /&gt;
+                                                If you have any questions, contact our Member Services team at 800-444-2778 and they will assist you. 
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;input value="true" name="resetJoinDate" type="radio" id="resetJoinDateYes" /&gt;&lt;label for="resetJoinDateYes"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Yes
+                                &lt;input value="false" name="resetJoinDate" type="radio" id="resetJoinDateNo" /&gt;&lt;label for="resetJoinDateNo"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;No 
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="divJournalPreference" class="headerWithFields"&gt;
+                                        &lt;h3&gt;Journal Preference&lt;/h3&gt;
+
+                                        &lt;div id="errorJournalPreferenceMO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;div class="label"&gt;
+                                                &lt;label class="overlay"&gt;
+                                                    Journal Preference&lt;span class="required"&gt;*&lt;/span&gt; &lt;a class="helpIcon"&gt;&lt;span class="fa fa-question-circle fa-lg"&gt;&lt;/span&gt;&lt;/a&gt;
+                                                    &lt;div class="helpDiv"&gt;
+                                                        Please select a journal preference, which allows you to choose which edition of the Radiologic Technology journal you would like to receive, when available.
+                                                        &lt;br /&gt;
+                                                        &lt;br /&gt;
+                                                        You can choose computed tomography, mammography, radiation therapy or general content. If you choose radiation therapy, you will receive the Radiation Therapist journal in place of Radiologic Technology two times a year. Your journal preference does not have to be your area of practice or match any of your credentials.
+
+                                                    &lt;/div&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="input"&gt;
+                                                &lt;select name="dropDownJournalPreference" id="dropDownJournalPreference" class="input"&gt;
+	&lt;option selected="selected" value="" disabled="disabled"&gt;&lt;/option&gt;
+	&lt;option value=""&gt;Select One&lt;/option&gt;
+	&lt;option value="3"&gt;Radiography&lt;/option&gt;
+	&lt;option value="4"&gt;Radiation Therapy&lt;/option&gt;
+	&lt;option value="6"&gt;Computed Tomography&lt;/option&gt;
+	&lt;option value="12"&gt;Mammography&lt;/option&gt;
+&lt;/select&gt;
+                                            &lt;/div&gt;
+
+
+
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="divChapters" class="headerWithFields"&gt;
+                                        &lt;h3&gt;ASRT Chapters&lt;/h3&gt;
+
+
+                                        &lt;div id="errorPrimaryChapterMO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;div class="label"&gt;
+                                                &lt;label class="overlay"&gt;
+                                                    Primary Chapter&lt;span class="required"&gt;*&lt;/span&gt; &lt;a class="helpIcon"&gt;&lt;span class="fa fa-question-circle fa-lg"&gt;&lt;/span&gt;&lt;/a&gt;
+                                                    &lt;div class="helpDiv"&gt;
+                                                        As part of the governance function of the ASRT, chapters provide members with a way to participate in initiatives that are specific to their modalities 
+                                                or specialties and to qualify as representatives in the ASRT House of Delegates.
+                                                    &lt;/div&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="input"&gt;
+                                                &lt;select name="dropDownPrimaryChapter" id="dropDownPrimaryChapter" class="input" onchange="PrimaryChapterChanged(this);"&gt;
+	&lt;option selected="selected" value="" disabled="disabled"&gt;&lt;/option&gt;
+	&lt;option value=""&gt;Select One&lt;/option&gt;
+	&lt;option value="101195"&gt;Bone Densitometry&lt;/option&gt;
+	&lt;option value="101224"&gt;Cardiac Interventional &amp;amp; Vascular Interventional&lt;/option&gt;
+	&lt;option value="101420"&gt;Computed Tomography&lt;/option&gt;
+	&lt;option value="101618"&gt;Dosimetry&lt;/option&gt;
+	&lt;option value="101642"&gt;Education&lt;/option&gt;
+	&lt;option value="101841"&gt;Magnetic Resonance&lt;/option&gt;
+	&lt;option value="101855"&gt;Mammography&lt;/option&gt;
+	&lt;option value="101860"&gt;Management&lt;/option&gt;
+	&lt;option value="101882"&gt;Military&lt;/option&gt;
+	&lt;option value="101915"&gt;Nuclear Medicine&lt;/option&gt;
+	&lt;option value="101962"&gt;Quality Management&lt;/option&gt;
+	&lt;option value="101981"&gt;Radiation Therapy&lt;/option&gt;
+	&lt;option value="101993"&gt;Radiography&lt;/option&gt;
+	&lt;option value="102242"&gt;Sonography&lt;/option&gt;
+	&lt;option value="105211"&gt;Registered Radiologist Assistant&lt;/option&gt;
+&lt;/select&gt;
+                                            &lt;/div&gt;
+
+
+
+                                        &lt;/div&gt;
+
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;div class="label inputPopulated inputFocused"&gt;
+                                                &lt;label&gt;Secondary Chapters&lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="input"&gt;
+                                                &lt;dl class="dropdown"&gt;
+                                                    &lt;dt&gt;
+                                                        &lt;div class="pretendLink"&gt;
+                                                            &lt;span class="hida"&gt;Select Secondary Chapters&lt;/span&gt;
+                                                            &lt;p class="multiSel" style="display: none;"&gt;&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/dt&gt;
+                                                    &lt;dd&gt;
+                                                        &lt;div id="divSecondaryChapters" class="multiSelect"&gt;&lt;ul&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterBoneDensitometry" type="checkbox" value="101195" enabled="" /&gt;&lt;label for="chapterBoneDensitometry"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Bone Densitometry&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterCardiacInterventional&amp;amp;VascularInterventional" type="checkbox" value="101224" enabled="" /&gt;&lt;label for="chapterCardiacInterventional&amp;amp;VascularInterventional"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Cardiac Interventional &amp;amp; Vascular Interventional&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterComputedTomography" type="checkbox" value="101420" enabled="" /&gt;&lt;label for="chapterComputedTomography"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Computed Tomography&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterDosimetry" type="checkbox" value="101618" enabled="" /&gt;&lt;label for="chapterDosimetry"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Dosimetry&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterEducation" type="checkbox" value="101642" enabled="" /&gt;&lt;label for="chapterEducation"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Education&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterMagneticResonance" type="checkbox" value="101841" enabled="" /&gt;&lt;label for="chapterMagneticResonance"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Magnetic Resonance&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterMammography" type="checkbox" value="101855" enabled="" /&gt;&lt;label for="chapterMammography"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Mammography&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterManagement" type="checkbox" value="101860" enabled="" /&gt;&lt;label for="chapterManagement"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Management&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterMilitary" type="checkbox" value="101882" enabled="" /&gt;&lt;label for="chapterMilitary"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Military&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterNuclearMedicine" type="checkbox" value="101915" enabled="" /&gt;&lt;label for="chapterNuclearMedicine"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Nuclear Medicine&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterQualityManagement" type="checkbox" value="101962" enabled="" /&gt;&lt;label for="chapterQualityManagement"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Quality Management&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterRadiationTherapy" type="checkbox" value="101981" enabled="" /&gt;&lt;label for="chapterRadiationTherapy"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Radiation Therapy&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterRadiography" type="checkbox" value="101993" enabled="" /&gt;&lt;label for="chapterRadiography"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Radiography&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterRegisteredRadiologistAssistant" type="checkbox" value="105211" enabled="" /&gt;&lt;label for="chapterRegisteredRadiologistAssistant"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Registered Radiologist Assistant&lt;/label&gt;&lt;/li&gt;&lt;li&gt;&lt;input name="secondaryChaptersCheckBox" id="chapterSonography" type="checkbox" value="102242" enabled="" /&gt;&lt;label for="chapterSonography"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;Sonography&lt;/label&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                                                    &lt;/dd&gt;
+                                                &lt;/dl&gt;
+                                            &lt;/div&gt;
+
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
+                                    &lt;div id="divPremium" class="headerWithFields"&gt;
+                                        &lt;h3&gt;Premium Membership&lt;/h3&gt;
+
+                                        &lt;div class="inputAndLabel"&gt;
+                                            &lt;p&gt;
+                                                For an additional $20 per year, you can enjoy the added benefits of Premium Membership.
+                                            &lt;/p&gt;
+                                            &lt;input name="checkboxPremium" type="checkbox" id="checkboxPremium" /&gt;&lt;label for="checkboxPremium"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+                                            Yes, I want the Premium membership option.
+                            &lt;br /&gt;
+                                            &lt;br /&gt;
+                                            &lt;div&gt;
+                                                &lt;b&gt;Premium Benefits&lt;/b&gt;
+                                                &lt;ul&gt;
+                                                    &lt;li&gt;&lt;i&gt;ASRT Insider&lt;/i&gt; Newsletter&lt;/li&gt;
+                                                    &lt;li&gt;Special Membership Card&lt;/li&gt;
+                                                    &lt;li&gt;Collectible Lapel Pin&lt;/li&gt;
+                                                    &lt;li&gt;Priority Call Routing&lt;/li&gt;
+                                                    &lt;li&gt;Additional Discounts&lt;/li&gt;
+                                                    &lt;li id="flexPremiumBenefit"&gt;Immediate Access to 18 CE credits per year with DR Flex Plan™&lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="button"&gt;
+                                        &lt;button type="button" onclick="PreviousStepClicked(this);" class="primaryPassive"&gt;Back&lt;/button&gt;
+                                        &lt;button type="button" onclick="NextStepClicked(this);" class="primary"&gt;Next&lt;/button&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+
+                            &lt;div id="Step6" class="hidden"&gt;
+                                &lt;h2&gt;Payment Options &lt;/h2&gt;
+
+                                &lt;div class="inputCluster"&gt;
+                                    &lt;div id="errorGeneralPO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+
+                                    &lt;div class="headerWithFields" id="orderSummarySubStep1"&gt;
+                                        &lt;h3&gt;&lt;a onclick="ExpandLinkClicked(this);"&gt;&lt;span class="fa fa-minus-square-o"&gt;&lt;/span&gt; Order Summary&lt;/a&gt;&lt;/h3&gt;
+
+                                        &lt;div class="collapsable"&gt;
+                                            &lt;div id="divOrderSummary"&gt;
+                                                There are no items on your order.
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="headerWithFields" id="orderSummarySubStep2"&gt;
+                                        &lt;h3&gt;&lt;a onclick="ExpandLinkClicked(this);"&gt;&lt;span class="fa fa-minus-square-o"&gt;&lt;/span&gt; Payment Options&lt;span class="required"&gt;*&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+                                        &lt;div class="collapsable"&gt;
+                                            &lt;input value="1" name="paymentOptions" type="radio" id="payPalOption" onchange="PaymentOptionChanged(this);" /&gt;&lt;label for="payPalOption"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;PayPal®
+                                &lt;input name="buttonPayPalExpressCheckout" id="buttonPayPalExpressCheckout" type="image" onclick="return PayPalExpressButtonClicked();" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/silver-rect-paypalcheckout-34px.png" disabled="disabled" /&gt;
+                                            &lt;br /&gt;
+                                            &lt;div id="payPalSelectedMessage" class="hidden"&gt;PayPal will authorize the selected payment method for your order after you choose Submit.&lt;/div&gt;
+                                            &lt;br /&gt;
+                                            &lt;br /&gt;
+                                            &lt;div class="section group"&gt;
+                                                &lt;div class="col span_1_of_5"&gt;
+                                                    &lt;input value="2" name="paymentOptions" type="radio" id="creditCardOption" onchange="PaymentOptionChanged(this);" /&gt;&lt;label for="creditCardOption"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;Credit Card  
+                                                &lt;/div&gt;
+                                                &lt;div class="col span_4_of_5"&gt;
+                                                    &lt;div style="width: 25%; float: left;"&gt;
+                                                        &lt;img src="https://media.asrt.org/images/payment/icon_cc_visa.png" title="Visa" /&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div style="width: 25%; float: left;"&gt;
+                                                        &lt;img src="https://media.asrt.org/images/payment/icon_cc_mastercard.png" title="Mastercard" /&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div style="width: 25%; float: left;"&gt;
+                                                        &lt;img src="https://media.asrt.org/images/payment/icon_cc_amex.png" title="Amex" /&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div style="width: 25%; float: left;"&gt;
+                                                        &lt;img src="https://media.asrt.org/images/payment/icon_cc_discover.png" title="Discover" /&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div id="divCreditCardFields" style="display: none"&gt;
+                                                &lt;div id="errorNameOnCardPO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Name (as it appears on your card)&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="inputNameOnCard" type="text" id="inputNameOnCard" class="input" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+                                                &lt;div id="errorCardTypePO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Credit Card Type&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;select name="dropDownCardType" id="dropDownCardType" class="input"&gt;
+	&lt;option selected="selected" value="" disabled="disabled"&gt;&lt;/option&gt;
+	&lt;option value=""&gt;Select One&lt;/option&gt;
+	&lt;option value="Visa"&gt;Visa&lt;/option&gt;
+	&lt;option value="MasterCard"&gt;MasterCard&lt;/option&gt;
+	&lt;option value="American Express"&gt;American Express&lt;/option&gt;
+	&lt;option value="Discover"&gt;Discover&lt;/option&gt;
+&lt;/select&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+                                                &lt;div id="errorCardNumberPO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;Credit Card Number (no dashes or spaces)&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="inputCardNumber" type="number" id="inputCardNumber" class="input" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+                                                &lt;div id="errorCVVPO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label"&gt;
+                                                        &lt;label class="overlay"&gt;CVV&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;input name="inputCvv" type="number" id="inputCvv" class="input" /&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+                                                &lt;div id="errorCardExpirationPO" class="error"&gt;&lt;span class="fa fa-warning "&gt;&lt;/span&gt;&lt;/div&gt;
+
+                                                &lt;div class="inputAndLabel"&gt;
+                                                    &lt;div class="label inputPopulated inputFocused"&gt;
+                                                        &lt;label&gt;Expiration Date&lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="input"&gt;
+                                                        &lt;div class="creditCardExpirationDate" style="float: left; width: 20%; padding-right: 2%;"&gt;
+                                                            &lt;select name="dropDownExpirationMonth" id="dropDownExpirationMonth" class="input"&gt;
+	&lt;option value="-1"&gt;Month&lt;/option&gt;
+	&lt;option value="1"&gt;1&lt;/option&gt;
+	&lt;option value="2"&gt;2&lt;/option&gt;
+	&lt;option value="3"&gt;3&lt;/option&gt;
+	&lt;option value="4"&gt;4&lt;/option&gt;
+	&lt;option value="5"&gt;5&lt;/option&gt;
+	&lt;option value="6"&gt;6&lt;/option&gt;
+	&lt;option value="7"&gt;7&lt;/option&gt;
+	&lt;option value="8"&gt;8&lt;/option&gt;
+	&lt;option value="9"&gt;9&lt;/option&gt;
+	&lt;option value="10"&gt;10&lt;/option&gt;
+	&lt;option value="11"&gt;11&lt;/option&gt;
+	&lt;option value="12"&gt;12&lt;/option&gt;
+&lt;/select&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div style="float: left; width: 20%;"&gt;
+                                                            &lt;select name="dropDownExpirationYear" id="dropDownExpirationYear" class="input"&gt;
+	&lt;option value="-1"&gt;Year&lt;/option&gt;
+	&lt;option value="2017"&gt;2017&lt;/option&gt;
+	&lt;option value="2018"&gt;2018&lt;/option&gt;
+	&lt;option value="2019"&gt;2019&lt;/option&gt;
+	&lt;option value="2020"&gt;2020&lt;/option&gt;
+	&lt;option value="2021"&gt;2021&lt;/option&gt;
+	&lt;option value="2022"&gt;2022&lt;/option&gt;
+	&lt;option value="2023"&gt;2023&lt;/option&gt;
+	&lt;option value="2024"&gt;2024&lt;/option&gt;
+	&lt;option value="2025"&gt;2025&lt;/option&gt;
+	&lt;option value="2026"&gt;2026&lt;/option&gt;
+	&lt;option value="2027"&gt;2027&lt;/option&gt;
+&lt;/select&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+
+
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;br /&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="headerWithFields" id="orderSummarySubStep3"&gt;
+                                        &lt;h3&gt;&lt;a onclick="ExpandLinkClicked(this);"&gt;&lt;span class="fa fa-plus-square-o collapsed"&gt;&lt;/span&gt; Promotion Code&lt;/a&gt;&lt;/h3&gt;
+
+                                        &lt;div class="collapsable" style="display: none;"&gt;
+                                            &lt;div id="promoCodeSuccessfulApply" class="information" style="display: none"&gt;&lt;/div&gt;
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;Promotion Code&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxPromoCode" type="text" id="textBoxPromoCode" class="input" /&gt;
+                                                &lt;/div&gt;
+                                                &lt;br /&gt;
+
+                                                &lt;button type="button" class="primary" onclick="ApplyPromoCode();" id="buttonPromoCode"&gt;Apply Promo Code&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="headerWithFields" id="orderSummarySubStep4"&gt;
+                                        &lt;h3&gt;&lt;a onclick="ExpandLinkClicked(this);"&gt;&lt;span class="fa fa-minus-square-o"&gt;&lt;/span&gt; ASRT Foundation Donation&lt;/a&gt;&lt;/h3&gt;
+
+                                        &lt;div class="collapsable"&gt;
+                                            The ASRT Foundation is the philanthropic arm of the ASRT. Donations are 100% tax-deductible.
+                                &lt;div class="inputAndLabel"&gt;
+                                    &lt;div class="label"&gt;
+                                        &lt;label class="overlay"&gt;ASRT Foundation Donation amount&lt;/label&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="input"&gt;
+                                        &lt;input name="textBoxFoundationDonation" type="number" id="textBoxFoundationDonation" class="input" /&gt;
+                                    &lt;/div&gt;
+
+
+                                &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div id="orderSummarySubStep5" class="headerWithFields"&gt;
+                                        &lt;h3&gt;&lt;a onclick="ExpandLinkClicked(this);"&gt;&lt;span class="fa fa-minus-square-o"&gt;&lt;/span&gt; ASRT-PAC® Donation&lt;/a&gt;&lt;/h3&gt;
+
+                                        &lt;div class="collapsable"&gt;
+
+                                            &lt;div class="inputAndLabel"&gt;
+                                                &lt;div class="label"&gt;
+                                                    &lt;label class="overlay"&gt;ASRT-PAC(R) Donation amount&lt;/label&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="input"&gt;
+                                                    &lt;input name="textBoxPacDonation" type="number" id="textBoxPacDonation" class="input" /&gt;
+                                                &lt;/div&gt;
+
+
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="button"&gt;
+                                        &lt;button type="button" onclick="PreviousStepClicked(this);" class="primaryPassive"&gt;Back&lt;/button&gt;
+                                        &lt;button type="button" onclick="NextStepClicked(this);" class="primary"&gt;Submit&lt;/button&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="loadingOverlay" style="display:none;"&gt;
+                        &lt;div class="loadingImage"&gt;LOADING...&lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class="footer"&gt;
+                    &lt;div class="footerContent"&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;©&lt;label id="lblCopyrightYear"&gt;2017&lt;/label&gt;
+                                American Society of Radiologic Technologists
+                            &lt;/li&gt;
+                            &lt;li&gt;|&lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href="http://beta.asrt.org/main/about-asrt/privacy-policy" id="linkPrivacyPolicy"&gt;Privacy&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;|&lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href="http://beta.asrt.org/main/about-asrt/asrt-refund-policy" id="linkRefundPolicy"&gt;Refund Policy&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;|&lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href="http://beta.asrt.org/main/about-asrt/terms-of-use" id="linkTermsofUser"&gt;Terms&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;|&lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href="http://beta.asrt.org/more/site-help" id="linkSiteHelp"&gt;Help&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;|&lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href="http://beta.asrt.org/more/sitemap" id="linkSitemap"&gt;Sitemap&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;|&lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href="../FeedBack.aspx" id="linkSiteFeedback"&gt;Site Feedback&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;|&lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href="http://beta.asrt.org/main/about-asrt/contact-asrt" id="linkContactUs"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input name="hiddenValue" type="hidden" id="hiddenValue" value="449822" /&gt;
+        &lt;input name="anotherHiddenValue" type="hidden" id="anotherHiddenValue" /&gt;
+        &lt;input name="hiddenGrandTotalAmount" type="hidden" id="hiddenGrandTotalAmount" /&gt;
+        &lt;input name="hiddenPayPalToken" type="hidden" id="hiddenPayPalToken" /&gt;
+        &lt;input name="hiddenPayPalPayerProfileId" type="hidden" id="hiddenPayPalPayerProfileId" /&gt;
+    
+
+&lt;script type="text/javascript"&gt;
+//&amp;lt;![CDATA[
+var timeoutWarning = null; var timeout = null;if (timeoutWarning != null) clearTimeout(timeoutWarning);if (timeout != null) clearTimeout(timeout); var msTimeoutWarning = (20 - 5) * 60 * 1000; var msTimeout = 20 * 60 * 1000;timeoutWarning = setTimeout(function () { var check = confirm("Your session is about to expire due to inactivity. Select OK to keep your session active");if (check) {  __doPostBack("",""); } }, msTimeoutWarning);timeout = setTimeout(function () { alert("You have been logged out due to inactivity.");window.location.href = '/Logout.aspx'; }, msTimeout);//]]&amp;gt;
+&lt;/script&gt;
+&lt;/form&gt;
+
+    &lt;!-- Google AdWords --&gt;
+    &lt;script type="text/javascript"&gt;
+        /* &amp;lt;![CDATA[ */
+        var google_conversion_id = 1017567278;
+        var google_conversion_language = "en";
+        var google_conversion_format = "3";
+        var google_conversion_color = "ffffff";
+        var google_conversion_label = "-xCJCL7Rm2QQrrCb5QM"; var google_conversion_value = 1.00; var google_conversion_currency = "USD"; var google_remarketing_only = false;
+        /* ]]&amp;gt; */
+    &lt;/script&gt;
+    &lt;script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"&gt;
+    &lt;/script&gt;&lt;img height="1" width="1" border="0" alt="" src="https://www.googleadservices.com/pagead/conversion/1017567278/?random=1503954445002&amp;amp;cv=8&amp;amp;fst=1503954445002&amp;amp;num=1&amp;amp;fmt=3&amp;amp;value=1&amp;amp;currency_code=USD&amp;amp;label=-xCJCL7Rm2QQrrCb5QM&amp;amp;bg=ffffff&amp;amp;hl=en&amp;amp;guid=ON&amp;amp;eid=27391101&amp;amp;u_h=1080&amp;amp;u_w=1920&amp;amp;u_ah=1040&amp;amp;u_aw=1920&amp;amp;u_cd=24&amp;amp;u_his=5&amp;amp;u_tz=-360&amp;amp;u_java=false&amp;amp;u_nplug=5&amp;amp;u_nmime=7&amp;amp;frm=0&amp;amp;url=https%3A%2F%2Fbeta.apps.asrt.org%2FJoinRenew%2FJoinRenew.aspx&amp;amp;ref=https%3A%2F%2Fbeta.apps.asrt.org%2FDefault.aspx&amp;amp;tiba=Join%20and%20Renew" style="display:none" /&gt;
+    &lt;noscript&gt;
+        &amp;lt;img height="1" width="1" border="0" alt="" src="https://www.googleadservices.com/pagead/conversion/1017567278/?random=1478295852302&amp;amp;cv=8&amp;amp;fst=1478295852302&amp;amp;num=1&amp;amp;fmt=3&amp;amp;value=1&amp;amp;currency_code=USD&amp;amp;label=-xCJCL7Rm2QQrrCb5QM&amp;amp;bg=ffffff&amp;amp;hl=en&amp;amp;guid=ON&amp;amp;u_h=1080&amp;amp;u_w=1920&amp;amp;u_ah=1040&amp;amp;u_aw=1920&amp;amp;u_cd=24&amp;amp;u_his=2&amp;amp;u_tz=-360&amp;amp;u_java=false&amp;amp;u_nplug=5&amp;amp;u_nmime=7&amp;amp;frm=0&amp;amp;url=https%3A%2F%2Fapps.asrt.org%2FDefault.aspx&amp;amp;tiba=Welcome%20to%20the%20ASRT!" style="display:none"&amp;gt;
+    &lt;/noscript&gt;
+
+
+&lt;div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"&gt;&lt;/div&gt;&lt;div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.7226376571992073"&gt;&lt;img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.1989831359030665" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=4006852&amp;amp;Ver=2&amp;amp;mid=b13a1032-7fba-3b72-ac2a-b42e6ed50ceb&amp;amp;evt=pageLoad&amp;amp;sid=4c506e54-0&amp;amp;lt=187&amp;amp;pi=-1748725250&amp;amp;lg=en-US&amp;amp;sw=1920&amp;amp;sh=1080&amp;amp;sc=24&amp;amp;r=https%3A%2F%2Fbeta.apps.asrt.org%2FDefault.aspx&amp;amp;tl=Join and Renew&amp;amp;p=https%3A%2F%2Fbeta.apps.asrt.org%2FJoinRenew%2FJoinRenew.aspx&amp;amp;rn=364198" /&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170828 15:07:25.601" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170828 15:07:25.601" starttime="20170828 15:07:25.343"></status>
+</kw>
+<msg timestamp="20170828 15:07:25.602" level="FAIL">Page should not have contained text 'You have already successfully renewed your membership today.'</msg>
+<status status="FAIL" endtime="20170828 15:07:25.602" starttime="20170828 15:07:25.304"></status>
+</kw>
+<msg timestamp="20170828 15:07:25.602" level="INFO">${NotRenewedToday} = False</msg>
+<status status="PASS" endtime="20170828 15:07:25.602" starttime="20170828 15:07:25.304"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NotRenewedToday}</arg>
+<arg>Renew Memebership</arg>
+</arguments>
+<status status="PASS" endtime="20170828 15:07:25.603" starttime="20170828 15:07:25.603"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>page should contain</arg>
+<arg>You have already successfully renewed your membership today.</arg>
+</arguments>
+<assign>
+<var>${alreadyRenewedToday}</var>
+</assign>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>You have already successfully renewed your membership today.</arg>
+</arguments>
+<msg timestamp="20170828 15:07:25.617" level="INFO">Current page contains text 'You have already successfully renewed your membership today.'.</msg>
+<status status="PASS" endtime="20170828 15:07:25.617" starttime="20170828 15:07:25.604"></status>
+</kw>
+<msg timestamp="20170828 15:07:25.618" level="INFO">${alreadyRenewedToday} = True</msg>
+<status status="PASS" endtime="20170828 15:07:25.618" starttime="20170828 15:07:25.603"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Can Not Renew</arg>
+</arguments>
+<status status="PASS" endtime="20170828 15:07:25.618" starttime="20170828 15:07:25.618"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${alreadyRenewedToday}</arg>
+<arg>Can Not Renew</arg>
+</arguments>
+<kw name="Can Not Renew" library="JoinandRenew">
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20170828 15:10:36.386" starttime="20170828 15:07:25.619"></status>
+</kw>
+<status status="PASS" endtime="20170828 15:10:36.386" starttime="20170828 15:07:25.619"></status>
+</kw>
+<status status="PASS" endtime="20170828 15:10:36.386" starttime="20170828 15:07:25.619"></status>
+</kw>
+<status status="PASS" endtime="20170828 15:10:36.386" starttime="20170828 15:07:24.777"></status>
+</kw>
+<kw name="And I verify Give Now" library="GiveNow">
+<doc>Verify Foundation Page Link</doc>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="aspnetForm"]/div[5]/div/div[1]/div/div[3]/div[2]/div/div[3]/div</arg>
+</arguments>
+<msg timestamp="20170828 15:10:36.388" level="INFO">Clicking element '//*[@id="aspnetForm"]/div[5]/div/div[1]/div/div[3]/div[2]/div/div[3]/div'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170828 15:10:36.398" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.101)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" endtime="20170828 15:10:36.398" starttime="20170828 15:10:36.390"></status>
+</kw>
+<msg timestamp="20170828 15:10:36.398" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.101)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<msg timestamp="20170828 15:10:36.401" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.101)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" endtime="20170828 15:10:36.401" starttime="20170828 15:10:36.388"></status>
+</kw>
+<status status="FAIL" endtime="20170828 15:10:36.401" starttime="20170828 15:10:36.388"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170828 15:10:39.426" starttime="20170828 15:10:36.401"></status>
+</kw>
+<doc>This is a Regression Test test</doc>
+<tags>
+<tag>joinRenew Regression</tag>
+</tags>
+<status status="FAIL" endtime="20170828 15:10:39.427" critical="yes" starttime="20170828 15:07:16.027">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.101)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</status>
+</test>
+<doc>Apps Test Suite</doc>
+<status status="FAIL" endtime="20170828 15:10:39.429" starttime="20170828 15:07:15.893"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">joinRenew Regression</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="C2-JoinRenew" pass="0">C2-JoinRenew</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170828 15:10:36.398" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.101)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+</errors>
+</robot>

@@ -1,0 +1,16 @@
+*** Settings ***
+
+Documentation   Apps Test Suite
+Resource  Library.txt
+
+
+*** Variables ***
+${MyCERecord}   //*[@id="ctl00_ContentPlaceHolder1_Widget_MyCE_btnCERecord"]
+${uploadCertButton}    //*[@id="ctl00_ContentPlaceHolder1_ButtonUploadCertificate"]
+
+*** Keywords ***
+I verify My CE Record
+   [Documentation]  Verify CE Record
+   click element  ${MyCERecord}
+   page should contain element   ${uploadCertButton}
+   go back

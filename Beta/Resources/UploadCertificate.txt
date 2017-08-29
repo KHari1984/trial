@@ -1,0 +1,32 @@
+*** Settings ***
+
+Documentation   Apps Test Suite
+Resource  Library.txt
+Library  DateTime
+Library  Process
+
+*** Variables ***
+
+*** Keywords ***
+I verify I can Upload certificate
+   click element  //*[@id="ctl00_SlimHeader_actionButton"]
+   click element  //*[@id="ctl00_ContentPlaceHolder1_Widget_MyCE_btnUploadCertificate"]
+   wait until page contains  My Certificates
+   click element  //*[@id="ctl00_ContentPlaceHolder1_startButton"]
+   wait until page contains   Step 2: Certificate Type
+   click element  //*[@id="ctl00_ContentPlaceHolder1_docTypeRadios_1"]
+   sleep  2s
+   click button  //*[@id="ctl00_ContentPlaceHolder1_wizardNav_NextButton"]
+   wait until element is enabled   //*[@id="ctl00_ContentPlaceHolder1_uploader_radUploadrow0"]/span/input[1]
+   click button  //*[@id="ctl00_ContentPlaceHolder1_uploader_radUploadrow0"]/span/input[1]
+   start  C:\\Users\\kchandrasekharan\\PycharmProjects\\Beta\\Resources\\FileUpload.exe
+   click element  //*[@id="ctl00_ContentPlaceHolder1_uploader_btnUploadDocumentAsyncPanel"]
+   wait until element is enabled  //*[@id="ctl00_ContentPlaceHolder1_wizardNav_SubmitButton"]
+   click element  //*[@id="ctl00_ContentPlaceHolder1_wizardNav_SubmitButton"]
+   wait until page contains  Your submission has been saved and a confirmation email has been sent.
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+*** Settings ***
+Documentation  Libraray Info
+Library  Selenium2Library
+Resource  Login.txt
+Resource  JoinandRenew.txt
+Resource  MyLearning.txt
+Resource  GiveNow.txt
+Resource  MyCERecord.txt
+Resource  UploadCertificate.txt
+Resource  DirectedLEarning.txt
+Library  DateTime
+
+
+*** Variables ***
+${url}
+${browser}
+${Env}
+${userIcon}
+${Logout}
+
+*** Keywords ***
+Open Apps
+    [Arguments]  ${Env}
+    Open Browser  ${url}  ${browser}
+    run keyword if  '${Env}' == 'Beta'  set suite variable  ${userIcon}  //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em
+    run keyword if  '${Env}' == 'Live'  set suite variable  ${userIcon}  //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em
+    run keyword if  '${Env}' == 'Beta'  set suite variable  ${Logout}    //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a
+    run keyword if  '${Env}' == 'Live'  set suite variable  ${Logout}    //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a
+    run keyword if  '${Env}' == 'Live'  set suite variable  ${GiveElement}    //*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[11]/a
+    run keyword if  '${Env}' == 'Beta'  set suite variable  ${GiveElement}   //*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[10]/a
+    Wait Until Page Contains  Welcome to the ASRT!
+

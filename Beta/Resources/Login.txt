@@ -1,0 +1,55 @@
+*** Settings ***
+
+Documentation   Apps Test Suite
+Resource  Library.txt
+Library  DateTime
+
+
+*** Variables ***
+${LoginButton}       //*[@id="ctl00_SlimHeader_actionButton"]
+${UserName_Input}    //*[@id="ctl00_ContentPlaceHolder1_ControlAlternateLogin_TextBoxLoginId"]
+${Password_Input}    //*[@id="ctl00_ContentPlaceHolder1_ControlAlternateLogin_TextBoxPassword"]
+${Login}             //*[@id="ctl00_ContentPlaceHolder1_ControlAlternateLogin_ButtonLogin"]
+${MyAsrt}            //*[@id="ctl00_ContentPlaceHolder1_MyASRTLink"]
+#${UserIcon}          //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[1]/a/em
+#${Logout}           //*[@id="TBCFD9DD5008_Col01"]/div[2]/div/div/div/li[2]/div/div[2]/ul/li[6]/a
+*** Keywords ***
+I have logged in Apps
+  [Documentation]   Sucessfull Login to Apps
+  [Arguments]   ${username}  ${password}
+  #sleep  3s
+  wait until element is visible  ${LoginButton}
+  click element  ${LoginButton}
+  input text  ${UserName_Input}  ${username}
+  input password  ${password_input}  ${password}
+  click button  ${login}
+  wait until element is visible  ${MyAsrt}
+
+
+I Choose to Log out
+  [Documentation]  Logging out from Apps
+   ${h} =  Get Time  hour
+   ${m} =  Get time  min
+   sleep  2s
+   click element  ${userIcon}
+   #sleep  2s
+  click element  ${Logout}
+    #sleep  2s
+
+I Am Back to Home page
+  [Documentation]  Verify HomePage
+    wait until page contains  American Society of Radiologic Technologists
+
+I Click My ASRT
+   #sleep  2s
+  [Documentation]  Click ASRT Link
+   click link  MyASRT
+   wait until page contains  News For You
+   page should contain   Resources
+   page should contain  Connect
+   page should contain  Latest Discussions
+   page should contain  News For You
+   page should contain element  //*[@id="ctl00_ContentPlaceHolder1_subHeader_HyperLinkStore"]
+
+
+

@@ -1,0 +1,16 @@
+*** Settings ***
+
+Documentation   Apps Test Suite
+Resource  Library.txt
+Library  DateTime
+
+*** Variables ***
+
+*** Keywords ***
+I verify My Learning
+   [Documentation]  I verify My Learning
+   click element  //*[@id="ctl00_ContentPlaceHolder1_Widget_MyCE_btnMyLearning"]
+   page should contain  My Learning
+   page should contain element  //*[@id="content"]/div[2]/div/div/div[1]/div/a[1]
+   click element  //*[@id="header"]/div/div[3]/span[2]/a[2]/span
+

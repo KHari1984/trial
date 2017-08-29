@@ -1,0 +1,19 @@
+*** Settings ***
+
+Documentation   Apps Test Suite
+Resource  Library.txt
+Library  DateTime
+
+*** Variables ***
+${GiveElement}
+*** Keywords ***
+ I verify Directed Learning
+    [Documentation]  Verify Directed REading
+     click element  //*[@id="aspnetForm"]/div[5]/div/div[1]/div/div[3]/div[2]/div/div[3]/div/span[1]
+     click element  //*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[4]/a
+     click element  //*[@id="bodyContent_C004_Col01"]/div[1]/div/div/ul/li[1]/a
+     wait until page contains  Credits Completed
+     set test variable  ${userIcon}  //*[@id="ctl00_SlimHeader_userIcon"]
+     set test variable  ${Logout}  //*[@id="ctl00_SlimHeader_popupContentDiv"]/a[3]
+
+

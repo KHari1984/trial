@@ -1,0 +1,129 @@
+*** Settings ***
+
+Documentation   Apps Test Suite
+Resource  Library.txt
+Library  DateTime
+
+*** Variables ***
+${MembershipRenewal}     //*[@id="ctl00_ContentPlaceHolder1_RenewLink"]
+${edit}                  //*[@id="Step1"]/div/div[3]/button[1]
+${PersonalInfo_Nxt}      //*[@id="divPersonalInfoButtons"]/button
+${MailInfo_Nxt}          //*[@id="contactInfoSubStep0CollaspableDiv"]/div/div[15]/button[2]
+${PhoneInfo_Nxt}         //*[@id="contactInfoSubStep1CollaspableDiv"]/div[2]/div[4]/button[2]
+
+#Memebership info
+
+${ARRTNo}                 //*[@id="radioButtonNOTARRTRegistered"]
+${OtherRegistNo}          //*[@id="radioButtonDoesNotHaveOtherRegistries"]
+${StateLiceneNo}          //*[@id="radioButtonDoesNotHaveStateLicenses"]
+${GraduateInfoNo}         //*[@id="radioButtonHasNotGraduated"]
+${SchoolNo}               //*[@id="radioButtonNotInSchool"]
+
+${flxDiv}                 //*[@id="divFlexOption"]/div[3]/div[2]/label[3]/div
+
+${MemebershipNxt}         //*[@id="Step5"]/div[2]/div[9]/button[2]
+${MemebershipOption1yr}   //*[@id="membershipOption101103_1"]
+${MemebershipOption_Nxt}  //*[@id="Step5"]/div[2]/div[9]/button[2]
+${creditCard}             //*[@id="creditCardOption"]
+${Name}                   //*[@id="inputNameOnCard"]
+${ChooseTtypeVisa}        //*[@id="dropDownCardType"]/option[3]
+${ccNum}                  //*[@id="inputCardNumber"]
+${cvv}                    //*[@id="inputCvv"]
+${MOChoice}               //*[@id="dropDownExpirationMonth"]/option[9]
+${YYYYChoice}            //*[@id="dropDownExpirationYear"]/option[7]
+${Submit}                //*[@id="Step6"]/div/div[7]/button[2]
+${Asrt_Home_Fromrecpt}   //*[@id="ctl00_SlimHeader_actionButton"]
+*** Keywords ***
+I Click Renew Memership
+        click element  ${membershiprenewal}
+
+        ${NotRenewedToday}=  Run Keyword And Return Status   page should not contain   You have already successfully renewed your membership today.
+        run keyword if  ${NotRenewedToday}  Renew Memebership
+
+        ${alreadyRenewedToday}=  Run Keyword And Return Status   page should contain   You have already successfully renewed your membership today.
+        log to console  Can Not Renew
+        run keyword if  ${alreadyRenewedToday}  Can Not Renew
+
+Can Not Renew
+        go back
+
+FlexOption
+       click element  ${flxDiv}
+       click element  //*[@id="dropDownPrimaryChapter"]
+       click element  //*[@id="dropDownPrimaryChapter"]/option[13]
+
+Renew Memebership
+       #click element  ${membershiprenewal}
+       wait until page contains  Renewal Summary
+       click element  ${edit}
+       wait until page contains  Personal Information
+       click element  ${personalinfo_nxt}
+       wait until page contains  Contact Information
+       click element  ${MailInfo_Nxt}
+       wait until page contains  Phone Number
+       wait until element is visible  ${PhoneInfo_Nxt}
+       click element  ${PhoneInfo_Nxt}
+       Determine The Memebership tag you are in
+       ${Flex}=    Run Keyword And Return Status    element should be enabled   ${flxdiv}
+       Run Keyword If   ${Flex}   FlexOption
+       click element  ${MemebershipNxt}
+       sleep  4s
+       wait until page contains  Payment Options
+       click element   ${creditcard}
+       input text  ${name}  asrt
+       click element  ${choosettypevisa}
+       input text  ${ccNum}  4450552146696825
+       input text  ${cvv}  000
+       click element  ${mochoice}
+       click element  ${yyyychoice}
+       click element  ${submit}
+       wait until page contains  Thank you for your membership!
+       I Click My ASRT from Recipt Page
+
+
+I Click My ASRT from Recipt Page
+   [Documentation]
+   click element  ${Asrt_Home_Fromrecpt}
+
+Determine The Memebership tag you are in
+    ${EduTab}=  Run Keyword And Return Status   page should contain   Have you graduated from an accredited school within the last 24 months?
+    run keyword if  ${EduTab}  Education Information
+    ${StateLicenseTab}  Run Keyword And Return Status    Element Should Be Visible   id=${stateliceneno}
+    run keyword if  ${StateLicenseTab}  State License Information
+     ${ORegTab}  Run Keyword And Return Status   Element Should Be Visible   id=${otherregistno}
+    run keyword if  ${ORegTab}  Other Resgisteries
+    ${ArrtTab}  Run keyword and return status    Element Should Be Visible   id=${otherregistno}
+    run keyword if  ${ArrtTab}  ARRT
+
+
+
+ARRT
+   click element  ${ARRTNo}
+   click element  ${otherregistno}
+   click element  ${stateliceneno}
+   click element  ${GraduateInfoNo}
+   click element  ${schoolno}
+
+
+Other Resgisteries
+   click element  ${otherregistno}
+   click element  ${stateliceneno}
+   click element  ${GraduateInfoNo}
+   click element  ${schoolno}
+
+
+State License Information
+   click element  ${stateliceneno}
+   click element  ${GraduateInfoNo}
+   click element  ${schoolno}
+
+
+Education Information
+  click element  ${GraduateInfoNo}
+  click element  ${schoolno}
+
+
+
+
+
+

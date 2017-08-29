@@ -1,0 +1,19 @@
+*** Settings ***
+
+Documentation   Apps Test Suite
+Resource  Library.txt
+Library  DateTime
+
+*** Variables ***
+${GiveElement}
+*** Keywords ***
+I verify Give Now
+    [Documentation]  Verify Foundation Page Link
+    click element  //*[@id="aspnetForm"]/div[5]/div/div[1]/div/div[3]/div[2]/div/div[3]/div
+    #click element  //*[@id="ctl00_SlimHeader_SlimMenu_mobileMenu"]/li[11]/a
+    click element  ${Giveelement}
+    wait until page contains  Give Now
+    go back
+    page should contain  My ASRT
+
+
